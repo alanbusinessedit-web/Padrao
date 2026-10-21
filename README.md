@@ -71,19 +71,19 @@ props/                       props prontas para os modos de narração
 
 ## "Fascismo x Comunismo: você sabe diferenciar?" (`FascismoComunismo`)
 
-Vídeo vertical de 1:25 (85 s), 1080×1920, 30 fps. Roteiro em
+Vídeo vertical de 1:28 (88 s), 1080×1920, 30 fps. Roteiro em
 `src/fascismo-comunismo/roteiro.json`.
 
 | Cena | Tempo | Conteúdo |
 | --- | --- | --- |
-| Gancho | 0–7 s | Duas pessoas discutindo ("FASCISTA!", "COMUNISTA!") → "VOCÊ SABE DIFERENCIAR?" |
-| Origens | 7–17 s | Karl Marx (1848) x Benito Mussolini (1919) |
-| Ideia central | 17–31 s | Luta de classes x a nação acima de tudo |
-| Economia | 31–43 s | Fim da propriedade privada dos meios de produção x empresas privadas sob o Estado |
-| Visão de mundo | 43–54 s | Internacionalista x ultranacionalista |
-| Em comum | 54–67 s | Partido único, censura, culto ao líder, perseguição (URSS de Stálin, Itália de Mussolini) |
-| Resumo | 67–78 s | Tabela comparativa e espectro (extrema esquerda x extrema direita) |
-| Final | 78–85 s | "AGORA VOCÊ SABE DIFERENCIAR" + "SIGA PARA MAIS" |
+| Gancho | 0–7,8 s | Duas pessoas discutindo ("FASCISTA!", "COMUNISTA!") → "VOCÊ SABE DIFERENCIAR?" |
+| Origens | 7,8–18,4 s | Karl Marx (1848) x Benito Mussolini (1919) |
+| Ideia central | 18,4–31,8 s | Luta de classes x a nação acima de tudo |
+| Economia | 31,8–42,3 s | Fim da propriedade privada dos meios de produção x empresas privadas sob o Estado |
+| Visão de mundo | 42,3–54,4 s | Internacionalista x ultranacionalista |
+| Em comum | 54,4–67,8 s | Partido único, censura, culto ao líder, perseguição (URSS de Stálin, Itália de Mussolini) |
+| Resumo | 67,8–79,5 s | Tabela comparativa e espectro (extrema esquerda x extrema direita) |
+| Final | 79,5–88 s | "AGORA VOCÊ SABE DIFERENCIAR" + "SIGA PARA MAIS" |
 
 ```bash
 npm run render:fc                       # gera fascismo-comunismo.mp4 (sem áudio)

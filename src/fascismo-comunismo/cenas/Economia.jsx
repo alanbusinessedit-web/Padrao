@@ -47,7 +47,7 @@ const PropriedadeColetiva = () => {
 // O Estado (prédio com colunas) controla a fábrica e o dono por "fios".
 const ControleDoEstado = () => {
   const frame = useCurrentFrame();
-  const fios = interpolate(frame, [270, 310], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const fios = interpolate(frame, [240, 280], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const balanco = Math.sin(frame / 8) * 4 * fios;
   return (
     <g>
@@ -79,7 +79,7 @@ export const Economia = () => (
     <Painel top={400} rotulo="COMUNISMO" cor={FC.com} corEscura={FC.comEscuro} atraso={10} de="esquerda" titulo="FIM DA PROPRIEDADE PRIVADA" texto="dos meios de produção: fábricas, terras e bancos">
       <PropriedadeColetiva />
     </Painel>
-    <Painel top={960} rotulo="FASCISMO" cor={FC.fas} corEscura={FC.fasEscuro} atraso={190} de="direita" titulo="EMPRESAS PRIVADAS" texto="mantidas, mas sob o comando do Estado">
+    <Painel top={960} rotulo="FASCISMO" cor={FC.fas} corEscura={FC.fasEscuro} atraso={165} de="direita" titulo="EMPRESAS PRIVADAS" texto="mantidas, mas sob o comando do Estado">
       <ControleDoEstado />
     </Painel>
   </AbsoluteFill>

@@ -23,7 +23,7 @@ export const RemotionRoot = () => {
       <Composition
         id="FascismoComunismo"
         component={FascismoComunismo}
-        durationInFrames={duracaoTotal(CENAS_FC)} // 2550 frames = 85s
+        durationInFrames={duracaoTotal(CENAS_FC)} // 2640 frames = 88s
         fps={FPS}
         width={LARGURA}
         height={ALTURA}
