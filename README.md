@@ -92,6 +92,17 @@ npm run render:fc:narracao              # com a narração por cena
 npm run render:fc:audio                 # com public/audio-fascismo-comunismo.mp3
 ```
 
+## Marca "Narrando o Direito"
+
+Logo em `src/marca/Logo.jsx` (símbolo: balão de fala + balança da justiça + ondas
+de som). As imagens prontas ficam em `marca/`:
+
+- `narrando-o-direito-quadrado.png` (1080×1080, foto de perfil; cabe no recorte redondo)
+- `narrando-o-direito-horizontal.png` (1600×600, banner/abertura)
+- versões `-transparente.png` de cada uma, para usar por cima de vídeos
+
+Para gerar de novo depois de mudar o logo: `npm run logo`.
+
 ## `MinhaCena`
 
 Exemplo simples de fade-in (1920×1080, 3 s): `npm run render:minha-cena`.

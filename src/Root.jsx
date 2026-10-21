@@ -2,6 +2,7 @@ import { Composition } from "remotion";
 import { ALTURA, DURACAO_TOTAL, FPS, LARGURA, duracaoTotal } from "./config";
 import { VotoBrasil } from "./Composition";
 import { MinhaCena } from "./MinhaCena";
+import { LogoHorizontal, LogoQuadrado } from "./marca/Logo";
 import { CENAS_FC, FascismoComunismo } from "./fascismo-comunismo/FascismoComunismo";
 
 export const RemotionRoot = () => {
@@ -29,6 +30,8 @@ export const RemotionRoot = () => {
         height={ALTURA}
         defaultProps={{ narracao: "nenhuma", legendas: true, volume: 1 }}
       />
+      <Composition id="LogoQuadrado" component={LogoQuadrado} durationInFrames={1} fps={30} width={1080} height={1080} defaultProps={{ fundo: true }} />
+      <Composition id="LogoHorizontal" component={LogoHorizontal} durationInFrames={1} fps={30} width={1600} height={600} defaultProps={{ fundo: true }} />
       <Composition
         id="MinhaCena"
         component={MinhaCena}
