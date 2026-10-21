@@ -3,7 +3,8 @@ import { fontFamily } from "../fonte";
 
 // Legenda dinâmica no rodapé: as palavras são destacadas ao longo da cena,
 // acompanhando a narração. `inicio`/`fim` em frames relativos à cena.
-export const Legenda = ({ texto, inicio = 6, fim }) => {
+// Com `palavrasPorBloco`, mostra só um bloco curto de cada vez (estilo Reels/TikTok).
+export const Legenda = ({ texto, inicio = 6, fim, palavrasPorBloco }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const fimFala = fim ?? durationInFrames - 12;
@@ -14,6 +15,10 @@ export const Legenda = ({ texto, inicio = 6, fim }) => {
     extrapolateRight: "clamp",
   });
   const opacidade = interpolate(frame, [0, 8], [0, 1], { extrapolateRight: "clamp" });
+
+  const tamBloco = palavrasPorBloco ?? palavras.length;
+  const bloco = Math.min(Math.floor(progresso / tamBloco), Math.ceil(palavras.length / tamBloco) - 1);
+  const primeira = bloco * tamBloco;
 
   return (
     <div
@@ -39,7 +44,8 @@ export const Legenda = ({ texto, inicio = 6, fim }) => {
           lineHeight: 1.3,
         }}
       >
-        {palavras.map((palavra, i) => {
+        {palavras.slice(primeira, primeira + tamBloco).map((palavra, j) => {
+          const i = primeira + j;
           const ativa = progresso > i;
           const atual = progresso > i && progresso < i + 1;
           return (

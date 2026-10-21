@@ -1,0 +1,63 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "cenas": [
+    {
+      "id": "gancho",
+      "inicio": 0,
+      "fim": 7,
+      "titulo": "VOCÊ SABE DIFERENCIAR?",
+      "narracao": "Fascista! Comunista! Essas palavras viraram xingamento. Mas você sabe diferenciar uma da outra?"
+    },
+    {
+      "id": "origens",
+      "inicio": 7,
+      "fim": 17,
+      "titulo": "ORIGENS",
+      "narracao": "O comunismo nasce das ideias de Karl Marx, no século dezenove. O fascismo surge na Itália, com Benito Mussolini, logo depois da Primeira Guerra Mundial."
+    },
+    {
+      "id": "ideia",
+      "inicio": 17,
+      "fim": 31,
+      "titulo": "A IDEIA CENTRAL",
+      "narracao": "Para o comunismo, a história é uma luta entre classes, e o objetivo final é uma sociedade sem classes. Para o fascismo, o centro de tudo é a nação, unida e acima do indivíduo."
+    },
+    {
+      "id": "economia",
+      "inicio": 31,
+      "fim": 43,
+      "titulo": "ECONOMIA",
+      "narracao": "Na economia, o comunismo quer acabar com a propriedade privada dos meios de produção. O fascismo mantém as empresas privadas, mas sob o comando do Estado."
+    },
+    {
+      "id": "visao",
+      "inicio": 43,
+      "fim": 54,
+      "titulo": "VISÃO DE MUNDO",
+      "narracao": "O comunismo se diz internacionalista e vê a burguesia como adversária. O fascismo é ultranacionalista, exalta a força e combate o comunismo e o liberalismo."
+    },
+    {
+      "id": "comum",
+      "inicio": 54,
+      "fim": 67,
+      "titulo": "O QUE TÊM EM COMUM?",
+      "narracao": "Mas, no século vinte, os dois deram origem a ditaduras de partido único, com censura, culto ao líder e perseguição a opositores, como na União Soviética de Stálin e na Itália de Mussolini."
+    },
+    {
+      "id": "resumo",
+      "inicio": 67,
+      "fim": 78,
+      "titulo": "RESUMO",
+      "narracao": "Resumindo: o comunismo gira em torno da classe, e o fascismo, em torno da nação. Por isso, costumam ficar em pontas opostas: extrema esquerda e extrema direita."
+    },
+    {
+      "id": "final",
+      "inicio": 78,
+      "fim": 85,
+      "titulo": "AGORA VOCÊ SABE",
+      "narracao": "Agora você sabe diferenciar. Use essas palavras com o significado certo, e compartilhe com quem precisa saber."
+    }
+  ]
+}

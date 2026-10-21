@@ -1,7 +1,8 @@
 import { Composition } from "remotion";
-import { ALTURA, DURACAO_TOTAL, FPS, LARGURA } from "./config";
+import { ALTURA, DURACAO_TOTAL, FPS, LARGURA, duracaoTotal } from "./config";
 import { VotoBrasil } from "./Composition";
 import { MinhaCena } from "./MinhaCena";
+import { CENAS_FC, FascismoComunismo } from "./fascismo-comunismo/FascismoComunismo";
 
 export const RemotionRoot = () => {
   return (
@@ -18,6 +19,15 @@ export const RemotionRoot = () => {
           legendas: true,
           volume: 1,
         }}
+      />
+      <Composition
+        id="FascismoComunismo"
+        component={FascismoComunismo}
+        durationInFrames={duracaoTotal(CENAS_FC)} // 2550 frames = 85s
+        fps={FPS}
+        width={LARGURA}
+        height={ALTURA}
+        defaultProps={{ narracao: "nenhuma", legendas: true, volume: 1 }}
       />
       <Composition
         id="MinhaCena"

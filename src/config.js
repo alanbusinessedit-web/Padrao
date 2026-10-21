@@ -6,13 +6,17 @@ export const ALTURA = roteiro.altura;
 
 // Tempos das cenas convertidos de segundos para frames.
 // Cena 1: 0-150 | Cena 2: 150-330 | Cena 3: 330-540 | Cena 4: 540-720 | Cena 5: 720-900
-export const CENAS = roteiro.cenas.map((cena) => ({
-  ...cena,
-  from: Math.round(cena.inicio * FPS),
-  duracao: Math.round((cena.fim - cena.inicio) * FPS),
-}));
+export const prepararCenas = (r) =>
+  r.cenas.map((cena) => ({
+    ...cena,
+    from: Math.round(cena.inicio * r.fps),
+    duracao: Math.round((cena.fim - cena.inicio) * r.fps),
+  }));
 
-export const DURACAO_TOTAL = CENAS[CENAS.length - 1].from + CENAS[CENAS.length - 1].duracao;
+export const duracaoTotal = (cenas) => cenas[cenas.length - 1].from + cenas[cenas.length - 1].duracao;
+
+export const CENAS = prepararCenas(roteiro);
+export const DURACAO_TOTAL = duracaoTotal(CENAS);
 
 // Duração da transição circular entre cenas (em frames).
 export const TRANSICAO = 14;

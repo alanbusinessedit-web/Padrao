@@ -58,14 +58,38 @@ use `"legendas": false` nos arquivos de `props/`.
 src/
   index.js              registerRoot
   Root.jsx              registra as composições
-  Composition.jsx       VotoBrasil: sequências das cenas, transições, legendas, áudio
+  Composition.jsx       VotoBrasil
+  fascismo-comunismo/   FascismoComunismo: roteiro, cenas, painéis e ícones
   roteiro.json          tempos, títulos e narração
   config.js             fps, tamanho, frames das cenas, paleta de cores
   fonte.js              Montserrat local (public/fonts)
   cenas/                Cena1Votos … Cena5Transparencia
-  components/           Fundo, CaixaTexto, Legenda, Transicao, Narracao
+  components/           VideoCenas, Fundo, CaixaTexto, Legenda, Transicao, Narracao
 scripts/gerar-narracao.mjs   TTS com ElevenLabs
 props/                       props prontas para os modos de narração
+```
+
+## "Fascismo x Comunismo: você sabe diferenciar?" (`FascismoComunismo`)
+
+Vídeo vertical de 1:25 (85 s), 1080×1920, 30 fps. Roteiro em
+`src/fascismo-comunismo/roteiro.json`.
+
+| Cena | Tempo | Conteúdo |
+| --- | --- | --- |
+| Gancho | 0–7 s | Duas pessoas discutindo ("FASCISTA!", "COMUNISTA!") → "VOCÊ SABE DIFERENCIAR?" |
+| Origens | 7–17 s | Karl Marx (1848) x Benito Mussolini (1919) |
+| Ideia central | 17–31 s | Luta de classes x a nação acima de tudo |
+| Economia | 31–43 s | Fim da propriedade privada dos meios de produção x empresas privadas sob o Estado |
+| Visão de mundo | 43–54 s | Internacionalista x ultranacionalista |
+| Em comum | 54–67 s | Partido único, censura, culto ao líder, perseguição (URSS de Stálin, Itália de Mussolini) |
+| Resumo | 67–78 s | Tabela comparativa e espectro (extrema esquerda x extrema direita) |
+| Final | 78–85 s | "AGORA VOCÊ SABE DIFERENCIAR" + "SIGA PARA MAIS" |
+
+```bash
+npm run render:fc                       # gera fascismo-comunismo.mp4 (sem áudio)
+ELEVENLABS_API_KEY=... ELEVENLABS_VOICE_ID=... npm run narracao:fc
+npm run render:fc:narracao              # com a narração por cena
+npm run render:fc:audio                 # com public/audio-fascismo-comunismo.mp3
 ```
 
 ## `MinhaCena`

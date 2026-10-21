@@ -1,10 +1,11 @@
 // Gera a narração de cada cena com o ElevenLabs (TTS) em public/narracao/<cena>.mp3.
 //
 // Uso:
-//   ELEVENLABS_API_KEY=xxx node scripts/gerar-narracao.mjs
-//   ELEVENLABS_API_KEY=xxx ELEVENLABS_VOICE_ID=<id> node scripts/gerar-narracao.mjs
+//   ELEVENLABS_API_KEY=xxx node scripts/gerar-narracao.mjs [roteiro.json] [pasta em public/]
+//   (padrão: src/roteiro.json -> public/narracao, o vídeo da eleição)
 //
-// Depois renderize com npm run render:narracao. Cada arquivo começa no
+// Atalhos: npm run narracao (eleição) e npm run narracao:fc (fascismo x comunismo).
+// Depois renderize com o render:...:narracao correspondente. Cada arquivo começa no
 // início da sua cena e é cortado no fim dela, então o texto de cada cena precisa
 // caber no tempo dela (o script avisa se passar).
 import { execFileSync } from "node:child_process";
@@ -13,8 +14,9 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const raiz = join(dirname(fileURLToPath(import.meta.url)), "..");
-const roteiro = JSON.parse(readFileSync(join(raiz, "src/roteiro.json"), "utf8"));
-const pasta = join(raiz, "public/narracao");
+const [arqRoteiro = "src/roteiro.json", pastaPublica = "narracao"] = process.argv.slice(2);
+const roteiro = JSON.parse(readFileSync(join(raiz, arqRoteiro), "utf8"));
+const pasta = join(raiz, "public", pastaPublica);
 
 const chave = process.env.ELEVENLABS_API_KEY;
 if (!chave) {

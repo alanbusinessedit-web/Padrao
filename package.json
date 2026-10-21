@@ -9,6 +9,10 @@
     "render:narracao": "remotion render VotoBrasil output.mp4 --props=props/narracao-cenas.json",
     "render:audio": "remotion render VotoBrasil output.mp4 --props=props/audio-unico.json",
     "narracao": "node scripts/gerar-narracao.mjs",
+    "render:fc": "remotion render FascismoComunismo fascismo-comunismo.mp4",
+    "render:fc:narracao": "remotion render FascismoComunismo fascismo-comunismo.mp4 --props=props/narracao-cenas.json",
+    "render:fc:audio": "remotion render FascismoComunismo fascismo-comunismo.mp4 --props=props/audio-unico.json",
+    "narracao:fc": "node scripts/gerar-narracao.mjs src/fascismo-comunismo/roteiro.json narracao-fascismo-comunismo",
     "render:minha-cena": "remotion render MinhaCena out/minha-cena.mp4"
   },
   "dependencies": {
