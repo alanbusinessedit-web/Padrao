@@ -5,17 +5,17 @@
   "description": "Vídeos com Remotion",
   "scripts": {
     "dev": "remotion studio",
-    "render": "remotion render MinhaCena out/minha-cena.mp4",
-    "typecheck": "tsc --noEmit"
+    "render": "remotion render VotoBrasil output.mp4",
+    "render:narracao": "remotion render VotoBrasil output.mp4 --props=props/narracao-cenas.json",
+    "render:audio": "remotion render VotoBrasil output.mp4 --props=props/audio-unico.json",
+    "narracao": "node scripts/gerar-narracao.mjs",
+    "render:minha-cena": "remotion render MinhaCena out/minha-cena.mp4"
   },
   "dependencies": {
-    "@remotion/cli": "^4.0.537",
+    "@remotion/cli": "4.0.537",
+    "@remotion/fonts": "4.0.537",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "remotion": "^4.0.537"
-  },
-  "devDependencies": {
-    "@types/react": "^19.3.0",
-    "typescript": "^7.0.2"
+    "remotion": "4.0.537"
   }
 }

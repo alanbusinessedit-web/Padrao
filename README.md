@@ -1,17 +1,73 @@
 # Padrao
 
-Projeto de vídeo com [Remotion](https://www.remotion.dev/).
+Vídeos com [Remotion](https://www.remotion.dev/) (React).
 
-## Uso
+## "Como Funciona o Voto no Brasil" (`VotoBrasil`)
+
+Vídeo vertical de 30 s, 1080×1920, 30 fps, em estilo flat 2D (inspirado no Kurzgesagt).
+
+| Cena | Tempo | Frames | Conteúdo |
+| --- | --- | --- | --- |
+| 1 | 0–5 s | 0–150 | Gradiente laranja, contador "100" + "MILHÕES DE VOTOS", multidão surgindo |
+| 2 | 5–11 s | 150–330 | Fundo roxo, urna eletrônica + Wi-Fi bloqueado, "100% OFF-LINE" |
+| 3 | 11–18 s | 330–540 | Relógio chega às 17:00, bits entram no cadeado, "DADOS CRIPTOGRAFADOS" |
+| 4 | 18–24 s | 540–720 | Boletim de urna impresso deslizando da urna, "BOLETIM DE URNA" |
+| 5 | 24–30 s | 720–900 | Mapa com conexões fluindo para Brasília, "TRANSPARÊNCIA TOTAL" |
+
+Os tempos, títulos e textos da narração ficam em `src/roteiro.json`. O vídeo, as
+legendas e o script de TTS leem esse arquivo; mude ali e tudo acompanha.
+
+### Comandos
 
 ```bash
 npm install
-npm run dev     # abre o Remotion Studio para visualizar
-npm run render  # gera out/minha-cena.mp4
+npm run dev               # Remotion Studio (pré-visualização no navegador)
+npm run render            # gera output.mp4 (sem áudio)
 ```
 
-## Cenas
+Comando equivalente sem npm:
 
-- `MinhaCena` (`src/MinhaCena.tsx`): fundo `#ff5e62` com o título
-  "Eleições no Brasil", surgindo com fade-in no primeiro segundo
-  (opacidade = `frame / 30`, a 30 fps).
+```bash
+npx remotion render VotoBrasil output.mp4
+```
+
+### Narração
+
+Há três modos, escolhidos pela prop `narracao`:
+
+1. **ElevenLabs, um arquivo por cena (sincronização exata)**
+   ```bash
+   ELEVENLABS_API_KEY=sua_chave ELEVENLABS_VOICE_ID=id_da_voz npm run narracao
+   npm run render:narracao
+   ```
+   O script gera `public/narracao/cena1.mp3` … `cena5.mp3` e avisa se alguma fala
+   passar do tempo da cena. Cada arquivo começa exatamente no primeiro frame da
+   sua cena e é cortado no último.
+
+2. **Arquivo único**: coloque o áudio em `public/audio.mp3` (já editado com os
+   tempos da tabela acima) e rode `npm run render:audio`.
+
+3. **Sem áudio**: `npm run render` (padrão).
+
+As legendas no rodapé destacam as palavras ao longo de cada cena. Para desligar,
+use `"legendas": false` nos arquivos de `props/`.
+
+### Estrutura
+
+```
+src/
+  index.js              registerRoot
+  Root.jsx              registra as composições
+  Composition.jsx       VotoBrasil: sequências das cenas, transições, legendas, áudio
+  roteiro.json          tempos, títulos e narração
+  config.js             fps, tamanho, frames das cenas, paleta de cores
+  fonte.js              Montserrat local (public/fonts)
+  cenas/                Cena1Votos … Cena5Transparencia
+  components/           Fundo, CaixaTexto, Legenda, Transicao, Narracao
+scripts/gerar-narracao.mjs   TTS com ElevenLabs
+props/                       props prontas para os modos de narração
+```
+
+## `MinhaCena`
+
+Exemplo simples de fade-in (1920×1080, 3 s): `npm run render:minha-cena`.

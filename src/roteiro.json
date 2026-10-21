@@ -1,0 +1,42 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "cenas": [
+    {
+      "id": "cena1",
+      "inicio": 0,
+      "fim": 5,
+      "titulo": "100 MILHÕES DE VOTOS",
+      "narracao": "Mais de cem milhões de votos são registrados em um único dia."
+    },
+    {
+      "id": "cena2",
+      "inicio": 5,
+      "fim": 11,
+      "titulo": "100% OFF-LINE",
+      "narracao": "A urna eletrônica nunca se conecta à internet. Ela funciona cem por cento off-line."
+    },
+    {
+      "id": "cena3",
+      "inicio": 11,
+      "fim": 18,
+      "titulo": "DADOS CRIPTOGRAFADOS",
+      "narracao": "Às dezessete horas, a votação termina e os dados são criptografados e assinados digitalmente."
+    },
+    {
+      "id": "cena4",
+      "inicio": 18,
+      "fim": 24,
+      "titulo": "BOLETIM DE URNA",
+      "narracao": "Cada urna imprime o boletim de urna, com o resultado da sua seção."
+    },
+    {
+      "id": "cena5",
+      "inicio": 24,
+      "fim": 30,
+      "titulo": "TRANSPARÊNCIA TOTAL",
+      "narracao": "Os boletins são publicados, e qualquer pessoa pode conferir. Transparência total."
+    }
+  ]
+}
