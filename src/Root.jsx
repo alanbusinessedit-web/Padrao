@@ -3,6 +3,7 @@ import { ALTURA, DURACAO_TOTAL, FPS, LARGURA, duracaoTotal } from "./config";
 import { VotoBrasil } from "./Composition";
 import { MinhaCena } from "./MinhaCena";
 import { LogoHorizontal, LogoQuadrado } from "./marca/Logo";
+import { CENAS_SI, SuspeicaoImpedimento } from "./suspeicao-impedimento/SuspeicaoImpedimento";
 import { CENAS_FC, FascismoComunismo } from "./fascismo-comunismo/FascismoComunismo";
 
 export const RemotionRoot = () => {
@@ -25,6 +26,15 @@ export const RemotionRoot = () => {
         id="FascismoComunismo"
         component={FascismoComunismo}
         durationInFrames={duracaoTotal(CENAS_FC)} // 2640 frames = 88s
+        fps={FPS}
+        width={LARGURA}
+        height={ALTURA}
+        defaultProps={{ narracao: "nenhuma", legendas: true, volume: 1 }}
+      />
+      <Composition
+        id="SuspeicaoImpedimento"
+        component={SuspeicaoImpedimento}
+        durationInFrames={duracaoTotal(CENAS_SI)} // 3870 frames = 2min09s
         fps={FPS}
         width={LARGURA}
         height={ALTURA}

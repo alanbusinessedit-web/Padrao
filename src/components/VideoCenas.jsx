@@ -32,7 +32,7 @@ export const VideoCenas = ({
           >
             <Transicao ativa={i > 0}>
               <Cena />
-              {legendas && <Legenda texto={cena.narracao} fim={cena.duracao - 15} palavrasPorBloco={palavrasPorBloco} />}
+              {legendas && cena.narracao && <Legenda texto={cena.narracao} fim={cena.duracao - 15} palavrasPorBloco={palavrasPorBloco} />}
             </Transicao>
           </Sequence>
         );

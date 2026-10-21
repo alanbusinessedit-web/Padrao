@@ -14,7 +14,11 @@
     "render:fc:audio": "remotion render FascismoComunismo fascismo-comunismo.mp4 --props=props/audio-unico.json",
     "narracao:fc": "node scripts/gerar-narracao.mjs src/fascismo-comunismo/roteiro.json narracao-fascismo-comunismo",
     "render:minha-cena": "remotion render MinhaCena out/minha-cena.mp4",
-    "logo": "remotion still LogoQuadrado marca/narrando-o-direito-quadrado.png --image-format=png && remotion still LogoHorizontal marca/narrando-o-direito-horizontal.png --image-format=png && remotion still LogoQuadrado marca/narrando-o-direito-quadrado-transparente.png --image-format=png --props=props/sem-fundo.json && remotion still LogoHorizontal marca/narrando-o-direito-horizontal-transparente.png --image-format=png --props=props/sem-fundo.json"
+    "logo": "remotion still LogoQuadrado marca/narrando-o-direito-quadrado.png --image-format=png && remotion still LogoHorizontal marca/narrando-o-direito-horizontal.png --image-format=png && remotion still LogoQuadrado marca/narrando-o-direito-quadrado-transparente.png --image-format=png --props=props/sem-fundo.json && remotion still LogoHorizontal marca/narrando-o-direito-horizontal-transparente.png --image-format=png --props=props/sem-fundo.json",
+    "render:si": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4",
+    "render:si:narracao": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4 --props=props/narracao-cenas.json",
+    "render:si:audio": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4 --props=props/audio-unico.json",
+    "narracao:si": "node scripts/gerar-narracao.mjs src/suspeicao-impedimento/roteiro.json narracao-suspeicao-impedimento"
   },
   "dependencies": {
     "@remotion/cli": "4.0.537",

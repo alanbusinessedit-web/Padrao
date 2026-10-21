@@ -28,7 +28,7 @@ const modelo = process.env.ELEVENLABS_MODEL_ID ?? "eleven_multilingual_v2";
 
 mkdirSync(pasta, { recursive: true });
 
-for (const cena of roteiro.cenas) {
+for (const cena of roteiro.cenas.filter((c) => c.narracao)) {
   const resposta = await fetch(
     `https://api.elevenlabs.io/v1/text-to-speech/${voz}?output_format=mp3_44100_128`,
     {

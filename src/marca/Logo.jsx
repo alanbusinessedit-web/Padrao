@@ -57,7 +57,7 @@ export const Simbolo = () => (
   </g>
 );
 
-const Nome = ({ x, y, tamanho, alinhamento = "middle" }) => (
+export const Nome = ({ x, y, tamanho, alinhamento = "middle" }) => (
   <text x={x} y={y} textAnchor={alinhamento} fontFamily={fontFamily} fontWeight={900} letterSpacing={tamanho * 0.04}>
     <tspan x={x} fill={MARCA.branco} fontSize={tamanho}>
       NARRANDO

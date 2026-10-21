@@ -2,7 +2,7 @@ import { AbsoluteFill } from "remotion";
 import { CaixaTexto } from "../../components/CaixaTexto";
 import { Fundo } from "../../components/Fundo";
 import { FC } from "../cores";
-import { Painel } from "../Painel";
+import { Painel } from "../../components/Painel";
 
 // Busto estilizado de Marx: cabelo e barba volumosos.
 const BustoMarx = () => (

@@ -92,6 +92,18 @@ npm run render:fc:narracao              # com a narração por cena
 npm run render:fc:audio                 # com public/audio-fascismo-comunismo.mp3
 ```
 
+## "Suspeição x Impedimento" (`SuspeicaoImpedimento`)
+
+Primeiro vídeo do Narrando o Direito. Vertical, 2:09, 1080×1920, 30 fps, cobrindo
+processo civil (CPC, arts. 144–146 e 966) e penal (CPP, arts. 96, 252, 254 e 256).
+Roteiro em `src/suspeicao-impedimento/roteiro.json`; termina com a logo animada.
+
+```bash
+npm run render:si                       # gera suspeicao-impedimento.mp4 (sem áudio)
+npm run render:si:audio                 # com public/audio-suspeicao-impedimento.mp3
+npm run narracao:si && npm run render:si:narracao   # ElevenLabs por cena
+```
+
 ## Marca "Narrando o Direito"
 
 Logo em `src/marca/Logo.jsx` (símbolo: balão de fala + balança da justiça + ondas

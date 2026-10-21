@@ -3,7 +3,7 @@ import { CaixaTexto } from "../../components/CaixaTexto";
 import { Fundo } from "../../components/Fundo";
 import { FC } from "../cores";
 import { Pessoa } from "../Icones";
-import { Painel } from "../Painel";
+import { Painel } from "../../components/Painel";
 
 // Globo com pessoas de mãos dadas girando em volta.
 const Internacional = () => {

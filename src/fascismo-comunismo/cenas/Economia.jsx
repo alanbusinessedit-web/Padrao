@@ -4,7 +4,7 @@ import { CaixaTexto } from "../../components/CaixaTexto";
 import { Fundo } from "../../components/Fundo";
 import { FC } from "../cores";
 import { Pessoa } from "../Icones";
-import { Painel } from "../Painel";
+import { Painel } from "../../components/Painel";
 
 const Fabrica = ({ x, y, cor, corTelhado }) => (
   <g transform={`translate(${x} ${y})`}>

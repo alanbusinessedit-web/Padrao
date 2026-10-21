@@ -1,0 +1,84 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "cenas": [
+    {
+      "id": "gancho",
+      "inicio": 0,
+      "fim": 8.5,
+      "titulo": "O JUIZ PODE SER AFASTADO?",
+      "narracao": "O juiz do seu processo é primo da outra parte. Ou é amigo íntimo do advogado dela. Ele pode julgar o caso?"
+    },
+    {
+      "id": "imparcialidade",
+      "inicio": 8.5,
+      "fim": 18.5,
+      "titulo": "IMPARCIALIDADE",
+      "narracao": "Todo juiz precisa ser imparcial. Quando isso está em risco, a lei prevê duas saídas, no processo civil e no penal: o impedimento e a suspeição."
+    },
+    {
+      "id": "impedimento",
+      "inicio": 18.5,
+      "fim": 38,
+      "titulo": "IMPEDIMENTO",
+      "narracao": "O impedimento é objetivo. São situações listadas na lei em que o juiz não pode atuar de jeito nenhum: quando ele, o cônjuge ou um parente até o terceiro grau é parte ou atua no processo, ou quando o próprio juiz já atuou na causa, como advogado, promotor ou testemunha."
+    },
+    {
+      "id": "suspeicao",
+      "inicio": 38,
+      "fim": 50.5,
+      "titulo": "SUSPEIÇÃO",
+      "narracao": "A suspeição é subjetiva. Envolve a relação do juiz com as partes: amizade íntima ou inimizade, ser credor ou devedor de uma delas, ter aconselhado alguma parte ou ter interesse no resultado."
+    },
+    {
+      "id": "civilPenal",
+      "inicio": 50.5,
+      "fim": 68,
+      "titulo": "CIVIL X PENAL",
+      "narracao": "As regras são parecidas nos dois códigos, mas há diferenças. No processo civil, a amizade ou a inimizade com o advogado da parte também conta. No penal, a lei fala em inimigo capital e inclui, por exemplo, o juiz que responde a processo por fato parecido."
+    },
+    {
+      "id": "foroIntimo",
+      "inicio": 68,
+      "fim": 75,
+      "titulo": "FORO ÍNTIMO",
+      "narracao": "O juiz também pode se declarar suspeito por motivo de foro íntimo, sem precisar explicar o porquê."
+    },
+    {
+      "id": "prazo",
+      "inicio": 75,
+      "fim": 88.5,
+      "titulo": "COMO ALEGAR",
+      "narracao": "Para alegar: no processo civil, o prazo é de quinze dias, contados de quando a parte soube do fato. No penal, a suspeição deve ser levantada na primeira oportunidade, antes de qualquer outra exceção."
+    },
+    {
+      "id": "pegadinha",
+      "inicio": 88.5,
+      "fim": 97.5,
+      "titulo": "ATENÇÃO!",
+      "narracao": "E atenção: quem provoca o juiz de propósito para criar a suspeição não pode usar isso depois. A regra vale nos dois códigos."
+    },
+    {
+      "id": "consequencias",
+      "inicio": 97.5,
+      "fim": 114.5,
+      "titulo": "A GRANDE DIFERENÇA",
+      "narracao": "A grande diferença está nas consequências. O impedimento é um vício gravíssimo, que pode ser reconhecido a qualquer tempo. No civil, permite até ação rescisória contra uma sentença definitiva. Já a suspeição, se não for alegada no momento certo, não pode mais ser discutida."
+    },
+    {
+      "id": "resumo",
+      "inicio": 114.5,
+      "fim": 124.5,
+      "titulo": "RESUMO",
+      "narracao": "Para não esquecer: impedimento é fato, que se prova com documento. Suspeição é relação, que envolve o ânimo do juiz. Agora você sabe a diferença."
+    },
+    {
+      "id": "marca",
+      "inicio": 124.5,
+      "fim": 129,
+      "titulo": "NARRANDO O DIREITO",
+      "narracao": ""
+    }
+  ]
+}

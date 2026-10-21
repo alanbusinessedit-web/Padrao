@@ -13,7 +13,7 @@ export const Narracao = ({ modo, cenas, pasta = "narracao", arquivo = "audio.mp3
   if (modo === "cenas") {
     return (
       <>
-        {cenas.map((cena) => (
+        {cenas.filter((cena) => cena.narracao).map((cena) => (
           <Sequence key={cena.id} from={cena.from} durationInFrames={cena.duracao} layout="none">
             <Audio src={staticFile(`${pasta}/${cena.id}.mp3`)} volume={volume} />
           </Sequence>
