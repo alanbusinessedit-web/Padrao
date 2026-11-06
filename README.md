@@ -118,3 +118,32 @@ Para gerar de novo depois de mudar o logo: `npm run logo`.
 ## `MinhaCena`
 
 Exemplo simples de fade-in (1920×1080, 3 s): `npm run render:minha-cena`.
+
+## "Bastidores: como nasce um vídeo" (`Bastidores`)
+
+Vídeo vertical de 28,5 s, 1080×1920, 30 fps, em outro estilo: fundo marrom-escuro,
+título em duas linhas (a de baixo numa faixa laranja) digitado a cada cena, e um
+painel de "interface" com etiqueta, narrador em pixel art, ondas de áudio, texto
+sendo digitado e imagens que surgem do chiado. Corte seco entre as cenas.
+Roteiro em `src/bastidores/roteiro.json` (cada cena tem `titulo: [linha1, linha2]`).
+
+| Cena | Tempo | Título | Painel |
+| --- | --- | --- | --- |
+| gancho | 0–3,6 s | SEM MOSTRAR / O ROSTO | Capas dos vídeos publicadas + carimbo "ROSTO: NENHUM" |
+| narrador | 3,6–7,4 s | QUEM NARRA / É ELE | Estúdio: o narrador se materializa e acena |
+| voz | 7,4–11,6 s | NÃO GRAVEI / NADA | Voz (IA), boca e legenda ligadas; "GRAVADO 00:00" riscado |
+| tema | 11,6–15,6 s | SÓ ESCOLHO / O TEMA | Tema digitado; a capa sai do chiado |
+| roteiro | 15,6–20,6 s | A IA PESQUISA / E ESCREVE | Lupa no CPC/CPP/STJ, roteiro.txt em cenas, narração |
+| cenas | 20,6–25,2 s | CENAS, ÍCONES / E LEGENDAS | Cenas montadas uma a uma, legenda e keyframes |
+| siga | 25,2–28,5 s | SIGA O NARRANDO / O DIREITO | Logo do canal e botão "SEGUIR" clicado |
+
+```bash
+npm run render:bastidores                    # bastidores.mp4 (sem áudio)
+ELEVENLABS_API_KEY=... npm run narracao:bastidores
+npm run render:bastidores:narracao           # com a narração por cena
+```
+
+Fontes: Anton (títulos) e Space Mono (etiquetas), em `public/fonts` (SIL OFL).
+Os componentes do estilo ficam em `src/bastidores/Elementos.jsx` (Titulo, Painel,
+Etiqueta, Caixa, Onda, Ruido, Moldura) e o narrador em `src/bastidores/Avatar.jsx`,
+para reaproveitar em outros vídeos.

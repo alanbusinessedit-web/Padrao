@@ -18,7 +18,10 @@
     "render:si": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4",
     "render:si:narracao": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4 --props=props/narracao-cenas.json",
     "render:si:audio": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4 --props=props/audio-unico.json",
-    "narracao:si": "node scripts/gerar-narracao.mjs src/suspeicao-impedimento/roteiro.json narracao-suspeicao-impedimento"
+    "narracao:si": "node scripts/gerar-narracao.mjs src/suspeicao-impedimento/roteiro.json narracao-suspeicao-impedimento",
+    "render:bastidores": "remotion render Bastidores bastidores.mp4",
+    "render:bastidores:narracao": "remotion render Bastidores bastidores.mp4 --props=props/bastidores-narracao.json",
+    "narracao:bastidores": "node scripts/gerar-narracao.mjs src/bastidores/roteiro.json narracao-bastidores"
   },
   "dependencies": {
     "@remotion/cli": "4.0.537",

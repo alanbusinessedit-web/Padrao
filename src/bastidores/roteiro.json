@@ -1,0 +1,56 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "cenas": [
+    {
+      "id": "gancho",
+      "inicio": 0,
+      "fim": 3.6,
+      "titulo": ["SEM MOSTRAR", "O ROSTO"],
+      "narracao": "Eu faço vídeos de Direito sem mostrar o rosto."
+    },
+    {
+      "id": "narrador",
+      "inicio": 3.6,
+      "fim": 7.4,
+      "titulo": ["QUEM NARRA", "É ELE"],
+      "narracao": "Quem aparece é ele, o meu narrador."
+    },
+    {
+      "id": "voz",
+      "inicio": 7.4,
+      "fim": 11.6,
+      "titulo": ["NÃO GRAVEI", "NADA"],
+      "narracao": "E eu não gravo nada: a voz é feita com inteligência artificial."
+    },
+    {
+      "id": "tema",
+      "inicio": 11.6,
+      "fim": 15.6,
+      "titulo": ["SÓ ESCOLHO", "O TEMA"],
+      "narracao": "Eu só escolho o tema."
+    },
+    {
+      "id": "roteiro",
+      "inicio": 15.6,
+      "fim": 20.6,
+      "titulo": ["A IA PESQUISA", "E ESCREVE"],
+      "narracao": "A IA pesquisa a lei, escreve o roteiro e divide em cenas."
+    },
+    {
+      "id": "cenas",
+      "inicio": 20.6,
+      "fim": 25.2,
+      "titulo": ["CENAS, ÍCONES", "E LEGENDAS"],
+      "narracao": "Depois o código monta as cenas, os ícones e as legendas."
+    },
+    {
+      "id": "siga",
+      "inicio": 25.2,
+      "fim": 28.5,
+      "titulo": ["SIGA O NARRANDO", "O DIREITO"],
+      "narracao": "Siga o Narrando o Direito."
+    }
+  ]
+}
