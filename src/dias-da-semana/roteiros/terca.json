@@ -1,0 +1,119 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "id": "terca",
+  "nome": "TERÇA",
+  "sufixo": "-FEIRA",
+  "curto": "TER",
+  "indice": 2,
+  "ordem": 2,
+  "planeta": "marte",
+  "cores": {
+    "fundo1": "#2b0a10",
+    "fundo2": "#6a1b24",
+    "cor": "#ff6b81",
+    "corEscura": "#c1121f"
+  },
+  "cenas": [
+    {
+      "id": "gancho",
+      "inicio": 0,
+      "fim": 10,
+      "titulo": "O DIA DA GUERRA",
+      "narracao": "A terça-feira já foi o dia do deus da guerra. E em alguns países, ela dá mais azar que a sexta-feira treze."
+    },
+    {
+      "id": "nome",
+      "inicio": 10,
+      "fim": 22,
+      "titulo": "A ORIGEM DO NOME",
+      "latim": "FERIA TERTIA",
+      "traducao": "TERCEIRO DIA",
+      "antigo": "DIA DE MARTE",
+      "antigoLatim": "MARTIS DIES",
+      "linguas": [
+        [
+          "ESPANHOL",
+          "martes"
+        ],
+        [
+          "FRANCÊS",
+          "mardi"
+        ],
+        [
+          "ITALIANO",
+          "martedì"
+        ]
+      ],
+      "narracao": "Terça vem de feria tertia, o terceiro dia. Antes, era o dia de Marte, o deus romano da guerra. Por isso, martes em espanhol e mardi em francês."
+    },
+    {
+      "id": "porque",
+      "inicio": 22,
+      "fim": 34.5,
+      "titulo": "E NO INGLÊS?",
+      "visual": {
+        "tipo": "par",
+        "icones": [
+          "marte",
+          "tyr"
+        ],
+        "rotulos": [
+          "MARTE",
+          "TYR"
+        ]
+      },
+      "cards": [
+        {
+          "em": "Tuesday",
+          "titulo": "TUESDAY = DIA DE TYR",
+          "texto": "deus nórdico da guerra"
+        },
+        {
+          "em": "povos",
+          "titulo": "TROCA DE DEUSES",
+          "texto": "os germânicos usaram o seu equivalente"
+        }
+      ],
+      "narracao": "E não é só no latim. Em inglês, Tuesday é o dia de Tyr, o deus nórdico da guerra. Os povos germânicos trocaram o deus romano pelo equivalente deles."
+    },
+    {
+      "id": "curiosidade",
+      "inicio": 34.5,
+      "fim": 50,
+      "titulo": "FATO CURIOSO",
+      "visual": {
+        "tipo": "calendario",
+        "topo": "MARTES",
+        "numero": "13"
+      },
+      "cards": [
+        {
+          "em": "terça-feira",
+          "titulo": "TERÇA-FEIRA 13",
+          "texto": "o dia do azar no mundo hispânico"
+        },
+        {
+          "em": "ditado",
+          "titulo": "\"NI TE CASES NI TE EMBARQUES\"",
+          "texto": "não se case nem viaje"
+        },
+        {
+          "em": "Grécia,",
+          "titulo": "NA GRÉCIA TAMBÉM",
+          "texto": "terça é dia de azar"
+        }
+      ],
+      "narracao": "Na Espanha e na América Latina, o dia do azar é a terça-feira treze. O ditado diz: na terça, não se case nem embarque. E na Grécia, a terça também tem fama de dia do azar."
+    },
+    {
+      "id": "final",
+      "inicio": 50,
+      "fim": 54.5,
+      "titulo": "PRÓXIMO",
+      "proximo": "QUARTA-FEIRA",
+      "narracao": "Próximo: quarta-feira. Siga para ver a série completa."
+    }
+  ]
+}

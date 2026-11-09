@@ -1,0 +1,112 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "id": "sexta",
+  "nome": "SEXTA",
+  "sufixo": "-FEIRA",
+  "curto": "SEX",
+  "indice": 5,
+  "ordem": 5,
+  "planeta": "venus",
+  "cores": {
+    "fundo1": "#3d0a30",
+    "fundo2": "#7a1a5e",
+    "cor": "#ff70a6",
+    "corEscura": "#c9306e"
+  },
+  "cenas": [
+    {
+      "id": "gancho",
+      "inicio": 0,
+      "fim": 8,
+      "titulo": "MEDO DE SEXTA 13?",
+      "narracao": "Existe um nome científico para o medo da sexta-feira treze. E ele é quase impossível de pronunciar."
+    },
+    {
+      "id": "nome",
+      "inicio": 8,
+      "fim": 19,
+      "titulo": "A ORIGEM DO NOME",
+      "latim": "FERIA SEXTA",
+      "traducao": "SEXTO DIA",
+      "antigo": "DIA DE VÊNUS",
+      "antigoLatim": "VENERIS DIES",
+      "linguas": [
+        [
+          "ESPANHOL",
+          "viernes"
+        ],
+        [
+          "FRANCÊS",
+          "vendredi"
+        ],
+        [
+          "ITALIANO",
+          "venerdì"
+        ]
+      ],
+      "narracao": "Sexta vem de feria sexta, o sexto dia. Antes, era o dia de Vênus, a deusa do amor: viernes em espanhol e vendredi em francês."
+    },
+    {
+      "id": "porque",
+      "inicio": 19,
+      "fim": 30.5,
+      "titulo": "E NO INGLÊS?",
+      "visual": {
+        "tipo": "par",
+        "icones": [
+          "venus",
+          "frigg"
+        ],
+        "rotulos": [
+          "VÊNUS",
+          "FRIGG"
+        ]
+      },
+      "cards": [
+        {
+          "em": "Friday",
+          "titulo": "FRIDAY = DIA DE FRIGG",
+          "texto": "deusa nórdica do amor e do casamento"
+        },
+        {
+          "em": "Brasil,",
+          "titulo": "NO BRASIL VIROU VERBO",
+          "texto": "SEXTOU!"
+        }
+      ],
+      "narracao": "Em inglês, Friday é o dia de Frigg, a deusa nórdica ligada ao amor e ao casamento. E no Brasil, a sexta ganhou até verbo: sextou!"
+    },
+    {
+      "id": "curiosidade",
+      "inicio": 30.5,
+      "fim": 39.5,
+      "titulo": "FATO CURIOSO",
+      "visual": {
+        "tipo": "palavra",
+        "partes": [
+          "PARASKEVÍ",
+          "DEKATREÍS",
+          "FOBIA"
+        ],
+        "significados": [
+          "SEXTA-FEIRA",
+          "TREZE",
+          "MEDO"
+        ],
+        "palavra": "PARASCAVEDECATRIAFOBIA"
+      },
+      "cards": [],
+      "narracao": "O medo da sexta-feira treze se chama parascavedecatriafobia. Vem do grego: paraskeví, sexta-feira, dekatreís, treze, e fobia, medo."
+    },
+    {
+      "id": "final",
+      "inicio": 39.5,
+      "fim": 44,
+      "titulo": "PRÓXIMO",
+      "proximo": "SÁBADO",
+      "narracao": "Próximo: sábado. Siga para ver a série completa."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "id": "sabado",
+  "nome": "SÁBADO",
+  "sufixo": "",
+  "curto": "SÁB",
+  "indice": 6,
+  "ordem": 6,
+  "planeta": "saturno",
+  "cores": {
+    "fundo1": "#2e2208",
+    "fundo2": "#5f4813",
+    "cor": "#ffd166",
+    "corEscura": "#b8860b"
+  },
+  "cenas": [
+    {
+      "id": "gancho",
+      "inicio": 0,
+      "fim": 7.5,
+      "titulo": "CADÊ A \"FEIRA\"?",
+      "narracao": "Sábado e domingo são os únicos dias da semana sem feira no nome. Sabe por quê?"
+    },
+    {
+      "id": "nome",
+      "inicio": 7.5,
+      "fim": 18.5,
+      "titulo": "A ORIGEM DO NOME",
+      "latim": "SABBATUM",
+      "traducao": "DO HEBRAICO SHABAT: DESCANSO",
+      "antigo": "DIA DE SATURNO",
+      "antigoLatim": "SATURNI DIES",
+      "linguas": [
+        [
+          "ESPANHOL",
+          "sábado"
+        ],
+        [
+          "ITALIANO",
+          "sabato"
+        ],
+        [
+          "INGLÊS",
+          "Saturday"
+        ]
+      ],
+      "narracao": "Sábado vem do hebraico shabat, que quer dizer descanso, e passou ao latim como sabbatum. Antes disso, os romanos o chamavam de dia de Saturno."
+    },
+    {
+      "id": "porque",
+      "inicio": 18.5,
+      "fim": 34,
+      "titulo": "O 7º DIA",
+      "visual": {
+        "tipo": "icone",
+        "icone": "tabuas"
+      },
+      "cards": [
+        {
+          "em": "Bíblia,",
+          "titulo": "GÊNESIS",
+          "texto": "a criação em seis dias e o descanso no sétimo"
+        },
+        {
+          "em": "judeus.",
+          "titulo": "SHABAT",
+          "texto": "dia sagrado de descanso para os judeus"
+        },
+        {
+          "em": "Como",
+          "titulo": "NOME JÁ BÍBLICO",
+          "texto": "não precisou virar número"
+        }
+      ],
+      "narracao": "Na Bíblia, Deus cria o mundo em seis dias e descansa no sétimo. Por isso o sábado é o dia sagrado de descanso para os judeus. Como o nome já era bíblico, não precisou virar número."
+    },
+    {
+      "id": "curiosidade",
+      "inicio": 34,
+      "fim": 46,
+      "titulo": "FATO CURIOSO",
+      "visual": {
+        "tipo": "semanaInglesa"
+      },
+      "cards": [],
+      "narracao": "Saturday, em inglês, é o único dia da semana que manteve o nome de um deus romano: Saturno. Os outros homenageiam o Sol, a Lua ou deuses nórdicos."
+    },
+    {
+      "id": "final",
+      "inicio": 46,
+      "fim": 50.5,
+      "titulo": "PRÓXIMO",
+      "proximo": "DOMINGO",
+      "narracao": "Próximo: domingo. Siga para ver a série completa."
+    }
+  ]
+}

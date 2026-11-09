@@ -18,7 +18,11 @@
     "render:si": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4",
     "render:si:narracao": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4 --props=props/narracao-cenas.json",
     "render:si:audio": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4 --props=props/audio-unico.json",
-    "narracao:si": "node scripts/gerar-narracao.mjs src/suspeicao-impedimento/roteiro.json narracao-suspeicao-impedimento"
+    "narracao:si": "node scripts/gerar-narracao.mjs src/suspeicao-impedimento/roteiro.json narracao-suspeicao-impedimento",
+    "render:dias": "for d in segunda terca quarta quinta sexta sabado domingo; do node scripts/dia.mjs render $d || exit 1; done",
+    "render:dia": "node scripts/dia.mjs render",
+    "render:dia:narracao": "node scripts/dia.mjs render-narracao",
+    "narracao:dia": "node scripts/dia.mjs narracao"
   },
   "dependencies": {
     "@remotion/cli": "4.0.537",

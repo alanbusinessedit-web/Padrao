@@ -5,6 +5,7 @@ import { MinhaCena } from "./MinhaCena";
 import { LogoHorizontal, LogoQuadrado } from "./marca/Logo";
 import { CENAS_SI, SuspeicaoImpedimento } from "./suspeicao-impedimento/SuspeicaoImpedimento";
 import { CENAS_FC, FascismoComunismo } from "./fascismo-comunismo/FascismoComunismo";
+import { DIAS, idComposicao } from "./dias-da-semana/DiasDaSemana";
 
 export const RemotionRoot = () => {
   return (
@@ -40,6 +41,18 @@ export const RemotionRoot = () => {
         height={ALTURA}
         defaultProps={{ narracao: "nenhuma", legendas: true, volume: 1 }}
       />
+      {DIAS.map(({ id, cenas, Video }) => (
+        <Composition
+          key={id}
+          id={idComposicao(id)}
+          component={Video}
+          durationInFrames={duracaoTotal(cenas)}
+          fps={FPS}
+          width={LARGURA}
+          height={ALTURA}
+          defaultProps={{ narracao: "nenhuma", legendas: true, volume: 1 }}
+        />
+      ))}
       <Composition id="LogoQuadrado" component={LogoQuadrado} durationInFrames={1} fps={30} width={1080} height={1080} defaultProps={{ fundo: true }} />
       <Composition id="LogoHorizontal" component={LogoHorizontal} durationInFrames={1} fps={30} width={1600} height={600} defaultProps={{ fundo: true }} />
       <Composition

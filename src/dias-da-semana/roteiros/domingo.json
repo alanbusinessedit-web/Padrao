@@ -1,0 +1,94 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "id": "domingo",
+  "nome": "DOMINGO",
+  "sufixo": "",
+  "curto": "DOM",
+  "indice": 0,
+  "ordem": 7,
+  "planeta": "sol",
+  "cores": {
+    "fundo1": "#8a2c02",
+    "fundo2": "#d9480f",
+    "cor": "#ffe066",
+    "corEscura": "#e67700"
+  },
+  "cenas": [
+    {
+      "id": "gancho",
+      "inicio": 0,
+      "fim": 9,
+      "titulo": "O 1º DIA DA SEMANA",
+      "narracao": "O domingo é o primeiro dia da semana. E é por causa dele que a segunda se chama segunda."
+    },
+    {
+      "id": "nome",
+      "inicio": 9,
+      "fim": 21.5,
+      "titulo": "A ORIGEM DO NOME",
+      "latim": "DIES DOMINICUS",
+      "traducao": "DIA DO SENHOR",
+      "antigo": "DIA DO SOL",
+      "antigoLatim": "SOLIS DIES",
+      "linguas": [
+        [
+          "INGLÊS",
+          "Sunday"
+        ],
+        [
+          "ALEMÃO",
+          "Sonntag"
+        ],
+        [
+          "ESPANHOL",
+          "domingo"
+        ]
+      ],
+      "narracao": "Domingo vem do latim dies dominicus, o dia do Senhor. Antes, era o dia do Sol, nome que o inglês e o alemão mantêm até hoje: Sunday e Sonntag."
+    },
+    {
+      "id": "porque",
+      "inicio": 21.5,
+      "fim": 35.5,
+      "titulo": "POR QUE EXISTE?",
+      "visual": {
+        "tipo": "icone",
+        "icone": "constantino"
+      },
+      "cards": [
+        {
+          "em": "ressurreição",
+          "titulo": "RESSURREIÇÃO",
+          "texto": "o dia escolhido pelos cristãos"
+        },
+        {
+          "em": "Constantino",
+          "titulo": "CONSTANTINO, 321",
+          "texto": "descanso oficial no Império Romano"
+        }
+      ],
+      "narracao": "Os cristãos escolheram o domingo por ser o dia da ressurreição de Jesus. E em 321, o imperador Constantino fez do dia do Sol o dia oficial de descanso do Império Romano."
+    },
+    {
+      "id": "curiosidade",
+      "inicio": 35.5,
+      "fim": 51.5,
+      "titulo": "FATO CURIOSO",
+      "visual": {
+        "tipo": "semanaNumeros"
+      },
+      "cards": [],
+      "narracao": "Contando a partir do domingo, segunda é o segundo dia, terça o terceiro, e assim por diante. Mas a norma internacional ISO diz que a semana começa na segunda. Pela regra global, a segunda-feira é o primeiro dia."
+    },
+    {
+      "id": "final",
+      "inicio": 51.5,
+      "fim": 56,
+      "titulo": "FIM DA SÉRIE",
+      "proximo": null,
+      "narracao": "Fim da série. Siga para mais curiosidades."
+    }
+  ]
+}

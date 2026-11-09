@@ -1,0 +1,101 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "id": "quarta",
+  "nome": "QUARTA",
+  "sufixo": "-FEIRA",
+  "curto": "QUA",
+  "indice": 3,
+  "ordem": 3,
+  "planeta": "mercurio",
+  "cores": {
+    "fundo1": "#06302d",
+    "fundo2": "#0f5c55",
+    "cor": "#06d6a0",
+    "corEscura": "#078a68"
+  },
+  "cenas": [
+    {
+      "id": "gancho",
+      "inicio": 0,
+      "fim": 8.5,
+      "titulo": "A ORDEM TEM SEGREDO",
+      "narracao": "A ordem dos dias da semana não é aleatória. E a quarta-feira, bem no meio, guarda esse segredo."
+    },
+    {
+      "id": "nome",
+      "inicio": 8.5,
+      "fim": 19.5,
+      "titulo": "A ORIGEM DO NOME",
+      "latim": "FERIA QUARTA",
+      "traducao": "QUARTO DIA",
+      "antigo": "DIA DE MERCÚRIO",
+      "antigoLatim": "MERCURII DIES",
+      "linguas": [
+        [
+          "ESPANHOL",
+          "miércoles"
+        ],
+        [
+          "FRANCÊS",
+          "mercredi"
+        ],
+        [
+          "ITALIANO",
+          "mercoledì"
+        ]
+      ],
+      "narracao": "Quarta vem de feria quarta, o quarto dia. Antes, era o dia de Mercúrio, o mensageiro dos deuses: miércoles em espanhol e mercredi em francês."
+    },
+    {
+      "id": "porque",
+      "inicio": 19.5,
+      "fim": 29.5,
+      "titulo": "E NO INGLÊS?",
+      "visual": {
+        "tipo": "par",
+        "icones": [
+          "mercurio",
+          "odin"
+        ],
+        "rotulos": [
+          "MERCÚRIO",
+          "ODIN"
+        ]
+      },
+      "cards": [
+        {
+          "em": "Wednesday",
+          "titulo": "WEDNESDAY = DIA DE WODEN",
+          "texto": "outro nome de Odin"
+        },
+        {
+          "em": "romanos",
+          "titulo": "PARA OS ROMANOS",
+          "texto": "Odin era o Mercúrio dos germânicos"
+        }
+      ],
+      "narracao": "Em inglês, Wednesday é o dia de Woden, outro nome de Odin. Os romanos viam Odin como a versão germânica de Mercúrio."
+    },
+    {
+      "id": "curiosidade",
+      "inicio": 29.5,
+      "fim": 47.5,
+      "titulo": "O SEGREDO DA ORDEM",
+      "visual": {
+        "tipo": "heptagrama"
+      },
+      "cards": [],
+      "narracao": "Cada hora do dia era regida por um dos sete astros, nesta ordem. O astro da primeira hora dava nome ao dia. Pulando vinte e quatro horas, a sequência vira: Saturno, Sol, Lua, Marte, Mercúrio, Júpiter e Vênus. Exatamente a ordem da semana."
+    },
+    {
+      "id": "final",
+      "inicio": 47.5,
+      "fim": 52,
+      "titulo": "PRÓXIMO",
+      "proximo": "QUINTA-FEIRA",
+      "narracao": "Próximo: quinta-feira. Siga para ver a série completa."
+    }
+  ]
+}

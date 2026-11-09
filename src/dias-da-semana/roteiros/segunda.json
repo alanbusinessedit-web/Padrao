@@ -1,0 +1,116 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "id": "segunda",
+  "nome": "SEGUNDA",
+  "sufixo": "-FEIRA",
+  "curto": "SEG",
+  "indice": 1,
+  "ordem": 1,
+  "planeta": "lua",
+  "cores": {
+    "fundo1": "#14213d",
+    "fundo2": "#2b3f7a",
+    "cor": "#9bb8ff",
+    "corEscura": "#4361ee"
+  },
+  "cenas": [
+    {
+      "id": "gancho",
+      "inicio": 0,
+      "fim": 7.5,
+      "titulo": "POR QUE \"SEGUNDA\"?",
+      "narracao": "Por que a segunda-feira se chama segunda, se ela é o primeiro dia útil da semana?"
+    },
+    {
+      "id": "nome",
+      "inicio": 7.5,
+      "fim": 21.5,
+      "titulo": "A ORIGEM DO NOME",
+      "latim": "FERIA SECUNDA",
+      "traducao": "SEGUNDO DIA",
+      "antigo": "DIA DA LUA",
+      "antigoLatim": "LUNAE DIES",
+      "linguas": [
+        [
+          "ESPANHOL",
+          "lunes"
+        ],
+        [
+          "FRANCÊS",
+          "lundi"
+        ],
+        [
+          "INGLÊS",
+          "Monday"
+        ]
+      ],
+      "narracao": "O nome vem do latim feria secunda: o segundo dia, contando a partir do domingo. Antes, ela era o dia da Lua, como ainda é no espanhol, lunes, e no inglês, Monday."
+    },
+    {
+      "id": "porque",
+      "inicio": 21.5,
+      "fim": 35.5,
+      "titulo": "QUEM MUDOU?",
+      "visual": {
+        "tipo": "icone",
+        "icone": "bispo"
+      },
+      "cards": [
+        {
+          "em": "Martinho",
+          "titulo": "MARTINHO DE DUME",
+          "texto": "bispo de Braga, século VI"
+        },
+        {
+          "em": "não",
+          "titulo": "SEM DEUSES PAGÃOS",
+          "texto": "nada de homenagear a Lua todo dia"
+        },
+        {
+          "em": "trocou",
+          "titulo": "NOMES → NÚMEROS",
+          "texto": "segunda, terça, quarta..."
+        }
+      ],
+      "narracao": "A mudança é atribuída a Martinho de Dume, um bispo de Braga do século seis. Ele não queria que os cristãos homenageassem deuses pagãos todo dia, e trocou os nomes por números."
+    },
+    {
+      "id": "curiosidade",
+      "inicio": 35.5,
+      "fim": 51.5,
+      "titulo": "FATO CURIOSO",
+      "visual": {
+        "tipo": "icone",
+        "icone": "feira"
+      },
+      "cards": [
+        {
+          "em": "Feira",
+          "titulo": "FERIA = DIA DE FESTA",
+          "texto": "a mesma ideia de feriado"
+        },
+        {
+          "em": "Ou",
+          "titulo": "\"SEGUNDO FERIADO\"",
+          "texto": "ao pé da letra"
+        },
+        {
+          "em": "mesma",
+          "titulo": "MESMA RAIZ",
+          "texto": "férias e as feiras de rua"
+        }
+      ],
+      "narracao": "Feira vem de feria, que em latim queria dizer dia de festa. Ou seja: ao pé da letra, segunda-feira é o segundo feriado. E é a mesma palavra que deu origem a férias e às feiras de rua."
+    },
+    {
+      "id": "final",
+      "inicio": 51.5,
+      "fim": 56,
+      "titulo": "PRÓXIMO",
+      "proximo": "TERÇA-FEIRA",
+      "narracao": "Próximo: terça-feira. Siga para ver a série completa."
+    }
+  ]
+}

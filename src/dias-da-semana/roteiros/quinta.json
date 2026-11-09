@@ -1,0 +1,107 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "id": "quinta",
+  "nome": "QUINTA",
+  "sufixo": "-FEIRA",
+  "curto": "QUI",
+  "indice": 4,
+  "ordem": 4,
+  "planeta": "jupiter",
+  "cores": {
+    "fundo1": "#24123f",
+    "fundo2": "#47287a",
+    "cor": "#f8961e",
+    "corEscura": "#c2620a"
+  },
+  "cenas": [
+    {
+      "id": "gancho",
+      "inicio": 0,
+      "fim": 6.5,
+      "titulo": "UM DIA SUMIU!",
+      "narracao": "Em 2011, um país inteiro foi dormir numa quinta-feira e acordou no sábado."
+    },
+    {
+      "id": "nome",
+      "inicio": 6.5,
+      "fim": 18,
+      "titulo": "A ORIGEM DO NOME",
+      "latim": "FERIA QUINTA",
+      "traducao": "QUINTO DIA",
+      "antigo": "DIA DE JÚPITER",
+      "antigoLatim": "IOVIS DIES",
+      "linguas": [
+        [
+          "ESPANHOL",
+          "jueves"
+        ],
+        [
+          "FRANCÊS",
+          "jeudi"
+        ],
+        [
+          "ITALIANO",
+          "giovedì"
+        ]
+      ],
+      "narracao": "Quinta vem de feria quinta, o quinto dia. Antes, era o dia de Júpiter, o rei dos deuses romanos: jueves em espanhol e jeudi em francês."
+    },
+    {
+      "id": "porque",
+      "inicio": 18,
+      "fim": 29.5,
+      "titulo": "O DIA DO TROVÃO",
+      "visual": {
+        "tipo": "par",
+        "icones": [
+          "jupiter",
+          "thor"
+        ],
+        "rotulos": [
+          "JÚPITER",
+          "THOR"
+        ]
+      },
+      "cards": [
+        {
+          "em": "Thursday",
+          "titulo": "THURSDAY = DIA DE THOR",
+          "texto": "o deus nórdico do trovão"
+        },
+        {
+          "em": "alemão,",
+          "titulo": "DONNERSTAG",
+          "texto": "em alemão: o dia do trovão"
+        }
+      ],
+      "narracao": "Em inglês, Thursday é o dia de Thor. Faz sentido: Júpiter e Thor eram os deuses do trovão. Em alemão, é Donnerstag, o dia do trovão."
+    },
+    {
+      "id": "curiosidade",
+      "inicio": 29.5,
+      "fim": 46,
+      "titulo": "FATO CURIOSO",
+      "visual": {
+        "tipo": "samoa"
+      },
+      "cards": [
+        {
+          "em": "Samoa",
+          "titulo": "SAMOA, 2011",
+          "texto": "mudou de lado na linha de data"
+        }
+      ],
+      "narracao": "Samoa mudou de lado na linha internacional de data para se alinhar com a Austrália e a Nova Zelândia. Depois da quinta, 29 de dezembro de 2011, veio direto o sábado, 31. A sexta-feira 30 nunca existiu por lá."
+    },
+    {
+      "id": "final",
+      "inicio": 46,
+      "fim": 50.5,
+      "titulo": "PRÓXIMO",
+      "proximo": "SEXTA-FEIRA",
+      "narracao": "Próximo: sexta-feira. Siga para ver a série completa."
+    }
+  ]
+}

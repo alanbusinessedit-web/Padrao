@@ -60,6 +60,7 @@ src/
   Root.jsx              registra as composições
   Composition.jsx       VotoBrasil
   fascismo-comunismo/   FascismoComunismo: roteiro, cenas, painéis e ícones
+  dias-da-semana/       série de 7 reels: roteiros/, cenas/, ícones e visuais
   roteiro.json          tempos, títulos e narração
   config.js             fps, tamanho, frames das cenas, paleta de cores
   fonte.js              Montserrat local (public/fonts)
@@ -102,6 +103,40 @@ Roteiro em `src/suspeicao-impedimento/roteiro.json`; termina com a logo animada.
 npm run render:si                       # gera suspeicao-impedimento.mp4 (sem áudio)
 npm run render:si:audio                 # com public/audio-suspeicao-impedimento.mp3
 npm run narracao:si && npm run render:si:narracao   # ElevenLabs por cena
+```
+
+## Série "Dias da Semana" (`DiaSegunda` … `DiaDomingo`)
+
+Sete reels verticais (1080×1920, 30 fps, 44–56 s), um por dia, todos com o mesmo molde:
+
+| Cena | Conteúdo |
+| --- | --- |
+| Gancho | Página do bloquinho do dia anterior cai e revela o dia + pergunta |
+| A origem do nome | Nome em latim (*feria secunda*…), tradução, nome antigo riscado (dia da Lua, de Marte…) e como ficou em outras línguas |
+| Por que existe | Quem mudou o nome e por quê (Martinho de Dume, deuses nórdicos, Gênesis, Constantino) |
+| Fato curioso | Um fato por dia, com animação própria |
+| Próximo | Semana com os dias já vistos marcados e o próximo da série |
+
+| Reel | Fato curioso |
+| --- | --- |
+| Segunda | *Feria* era dia de festa: segunda-feira é o "segundo feriado" |
+| Terça | No mundo hispânico e na Grécia, o dia do azar é a terça-feira 13 |
+| Quarta | A ordem da semana sai das horas regidas pelos 7 astros (heptagrama) |
+| Quinta | Samoa, 2011: depois da quinta 29 veio o sábado 31 |
+| Sexta | Parascavedecatriafobia, o medo da sexta-feira 13 |
+| Sábado | *Saturday* é o único dia em inglês com nome de deus romano |
+| Domingo | O domingo é o 1º dia no calendário, mas a norma ISO 8601 começa na segunda |
+
+O conteúdo de cada reel (textos da tela, narração e tempos) fica em
+`src/dias-da-semana/roteiros/<dia>.json`; as cenas em `src/dias-da-semana/cenas/`
+leem esse arquivo. Os cartões e as animações entram no momento em que a narração
+chega à palavra indicada (campo `em`).
+
+```bash
+npm run render:dias                     # os 7 vídeos em out/dias/ (sem áudio)
+npm run render:dia -- terca             # só um
+ELEVENLABS_API_KEY=... ELEVENLABS_VOICE_ID=... npm run narracao:dia -- terca
+npm run render:dia:narracao -- terca    # com a narração por cena
 ```
 
 ## Marca "Narrando o Direito"
