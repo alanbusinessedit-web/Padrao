@@ -104,6 +104,18 @@ npm run render:si:audio                 # com public/audio-suspeicao-impedimento
 npm run narracao:si && npm run render:si:narracao   # ElevenLabs por cena
 ```
 
+## "Ultrapassagem pela esquerda" (`Ultrapassagem`)
+
+Desenho animado visto de cima, vertical, 39 s, 1080×1920, 30 fps. Pista simples de
+mão dupla: o carro azul confere a faixa da esquerda, dá seta para a esquerda,
+ultrapassa o vermelho com distância lateral, dá seta para a direita e volta à faixa
+de origem (CTB, art. 29, IX a XI). Fecha com um resumo (inclui art. 196) e a logo.
+Código em `src/ultrapassagem/Ultrapassagem.jsx`.
+
+```bash
+npm run render:ultrapassagem            # gera ultrapassagem.mp4 (sem áudio)
+```
+
 ## Marca "Narrando o Direito"
 
 Logo em `src/marca/Logo.jsx` (símbolo: balão de fala + balança da justiça + ondas

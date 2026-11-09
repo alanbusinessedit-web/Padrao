@@ -18,6 +18,7 @@
     "render:si": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4",
     "render:si:narracao": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4 --props=props/narracao-cenas.json",
     "render:si:audio": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4 --props=props/audio-unico.json",
+    "render:ultrapassagem": "remotion render Ultrapassagem ultrapassagem.mp4",
     "narracao:si": "node scripts/gerar-narracao.mjs src/suspeicao-impedimento/roteiro.json narracao-suspeicao-impedimento"
   },
   "dependencies": {

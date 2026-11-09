@@ -4,6 +4,7 @@ import { VotoBrasil } from "./Composition";
 import { MinhaCena } from "./MinhaCena";
 import { LogoHorizontal, LogoQuadrado } from "./marca/Logo";
 import { CENAS_SI, SuspeicaoImpedimento } from "./suspeicao-impedimento/SuspeicaoImpedimento";
+import { DURACAO_ULTRAPASSAGEM, Ultrapassagem } from "./ultrapassagem/Ultrapassagem";
 import { CENAS_FC, FascismoComunismo } from "./fascismo-comunismo/FascismoComunismo";
 
 export const RemotionRoot = () => {
@@ -39,6 +40,14 @@ export const RemotionRoot = () => {
         width={LARGURA}
         height={ALTURA}
         defaultProps={{ narracao: "nenhuma", legendas: true, volume: 1 }}
+      />
+      <Composition
+        id="Ultrapassagem"
+        component={Ultrapassagem}
+        durationInFrames={DURACAO_ULTRAPASSAGEM} // 1170 frames = 39s
+        fps={FPS}
+        width={LARGURA}
+        height={ALTURA}
       />
       <Composition id="LogoQuadrado" component={LogoQuadrado} durationInFrames={1} fps={30} width={1080} height={1080} defaultProps={{ fundo: true }} />
       <Composition id="LogoHorizontal" component={LogoHorizontal} durationInFrames={1} fps={30} width={1600} height={600} defaultProps={{ fundo: true }} />
