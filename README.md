@@ -108,7 +108,7 @@ npm run narracao:si && npm run render:si:narracao   # ElevenLabs por cena
 
 Série interativa de "você decide": Caio, 23 anos, estagiário, recebe um PIX de
 R$ 12.847,32 de um número desconhecido com a mensagem "NÃO GASTA. EM 7 DIAS EU BUSCO."
-Vertical, 1:01 (61 s), 1080×1920, 30 fps, cartoon 2D. Roteiro em
+Vertical, 45 s, 1080×1920, 30 fps, cartoon 2D. Roteiro em
 `src/pix-do-caio/roteiro.json` (tempos, narração e o `hud` de cada cena).
 
 Regras da série implementadas no código:
@@ -120,19 +120,28 @@ Regras da série implementadas no código:
 
 | Cena | Tempo | Conteúdo |
 | --- | --- | --- |
-| Gancho | 0–6 s | Caio de boca aberta, "PIX RECEBIDO R$ 12.847,32" contando, notas caindo |
-| Mensagem | 6–15 s | Celular: extrato do PIX + "NÃO GASTA. EM 7 DIAS EU BUSCO." digitando |
-| Mãe | 15–28 s | A mãe liga (voz alta), conta de luz R$ 187,00 "VENCE HOJE" |
-| Dilema | 28–36 s | Caio olha o saldo, a mensagem e o relógio |
-| Twist | 36–47 s | "Eu sei que você viu…", contador treme em vermelho, sombra de capuz na persiana |
-| Voto | 47–61 s | A) PAGA A CONTA DE LUZ  ×  B) NÃO MEXE NO DINHEIRO |
+| Gancho | 0–5 s | Caio de boca aberta, "PIX RECEBIDO R$ 12.847,32" contando, notas caindo |
+| Mensagem | 5–12 s | Celular: extrato do PIX + "NÃO GASTA. EM 7 DIAS EU BUSCO." digitando |
+| Mãe | 12–20 s | A mãe liga (e fala, em voz alta), conta de luz R$ 187,00 "VENCE HOJE" |
+| Dilema | 20–25 s | Caio olha o saldo, a mensagem e o relógio |
+| Twist | 25–34 s | O Remetente (voz grave) lê "Eu sei que você viu…", contador treme em vermelho, sombra de capuz na persiana |
+| Voto | 34–45 s | A) PAGA A CONTA DE LUZ  ×  B) NÃO MEXE NO DINHEIRO |
 
 ```bash
-npm run render:pix                      # gera pix-do-caio-ep1.mp4 (sem áudio, com legendas)
-ELEVENLABS_API_KEY=... ELEVENLABS_VOICE_ID=... npm run narracao:pix
-npm run render:pix:narracao             # com a narração por cena
-npm run render:pix:audio                # com public/audio-pix-do-caio.mp3
+npm run render:pix:narracao             # vídeo final: voz + efeitos (pix-do-caio-ep1.mp4)
+npm run render:pix                      # sem narração (efeitos e legendas continuam)
 ```
+
+Áudio (tudo versionado em `public/`):
+
+- **Vozes (ElevenLabs):** narrador Gabriel (acelerado 1,25x), a mãe (Isabela) e o Remetente
+  (Rannox Elion, voz grave). As falas originais ficam em `narracao-pix-do-caio/original/` e
+  `partes/`; `scripts/preparar-narracao-pix.sh` acelera e monta `<cena>.mp3` (mãe e Remetente
+  entram por cima do narrador nas cenas `mae` e `twist`).
+- **Efeitos:** `scripts/gerar-sfx-pix.sh` sintetiza em `public/sfx/` um som para cada
+  acontecimento (moeda do PIX, aviso do banco, mensagem, digitação, toque da mãe, carimbo,
+  pensamentos, relógio, vibração, alerta, Caio tremendo, sombra, voto…). Quando cada um toca
+  está em `src/pix-do-caio/Efeitos.jsx`.
 
 Personagens (Caio, a Mãe e a sombra do Remetente) são SVG em `src/pix-do-caio/Personagens.jsx`.
 

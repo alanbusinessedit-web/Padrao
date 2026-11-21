@@ -19,7 +19,7 @@
     {
       "id": "mensagem",
       "inicio": 5,
-      "fim": 13,
+      "fim": 12.2,
       "titulo": "A MENSAGEM",
       "hud": {
         "dias": 7,
@@ -31,21 +31,21 @@
     },
     {
       "id": "mae",
-      "inicio": 13,
-      "fim": 21,
+      "inicio": 12.2,
+      "fim": 20.2,
       "titulo": "A MÃE LIGA",
       "hud": {
         "dias": 7,
         "saldo": 12847.32,
         "suspeita": 0
       },
-      "narracao": "A mãe liga. A conta de luz vence hoje. Faltam cento e oitenta e sete reais.",
-      "fala": 4.47
+      "narracao": "A mãe liga.",
+      "fala": 1.0
     },
     {
       "id": "olhar",
-      "inicio": 21,
-      "fim": 26,
+      "inicio": 20.2,
+      "fim": 25.2,
       "titulo": "O DILEMA",
       "hud": {
         "dias": 7,
@@ -57,21 +57,21 @@
     },
     {
       "id": "twist",
-      "inicio": 26,
-      "fim": 35,
+      "inicio": 25.2,
+      "fim": 34.2,
       "titulo": "O TWIST",
       "hud": {
         "dias": 7,
         "saldo": 12847.32,
         "suspeita": 0
       },
-      "narracao": "Aí chega outra notificação. Mesmo número. Eu sei que você viu. Não inventa de pagar conta com o meu dinheiro.",
-      "fala": 5.69
+      "narracao": "Aí chega outra notificação. Mesmo número.",
+      "fala": 2.62
     },
     {
       "id": "voto",
-      "inicio": 35,
-      "fim": 47,
+      "inicio": 34.2,
+      "fim": 45.2,
       "titulo": "VOCÊ DECIDE",
       "hud": {
         "dias": 7,
