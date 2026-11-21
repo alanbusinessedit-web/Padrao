@@ -6,7 +6,7 @@
     {
       "id": "gancho",
       "inicio": 0,
-      "fim": 6,
+      "fim": 5,
       "titulo": "UM PIX CHEGOU",
       "hud": {
         "dias": 7,
@@ -14,12 +14,12 @@
         "suspeita": 0
       },
       "narracao": "Caio acabou de receber doze mil reais de um número que ele não conhece.",
-      "fala": 4.83
+      "fala": 3.89
     },
     {
       "id": "mensagem",
-      "inicio": 6,
-      "fim": 15,
+      "inicio": 5,
+      "fim": 13,
       "titulo": "A MENSAGEM",
       "hud": {
         "dias": 7,
@@ -27,12 +27,12 @@
         "suspeita": 0
       },
       "narracao": "Doze mil, oitocentos e quarenta e sete reais. E uma mensagem: não gasta. Em sete dias eu busco.",
-      "fala": 7.24
+      "fala": 5.8
     },
     {
       "id": "mae",
-      "inicio": 15,
-      "fim": 28,
+      "inicio": 13,
+      "fim": 21,
       "titulo": "A MÃE LIGA",
       "hud": {
         "dias": 7,
@@ -40,12 +40,12 @@
         "suspeita": 0
       },
       "narracao": "A mãe liga. A conta de luz vence hoje. Faltam cento e oitenta e sete reais.",
-      "fala": 5.56
+      "fala": 4.47
     },
     {
       "id": "olhar",
-      "inicio": 28,
-      "fim": 36,
+      "inicio": 21,
+      "fim": 26,
       "titulo": "O DILEMA",
       "hud": {
         "dias": 7,
@@ -53,12 +53,12 @@
         "suspeita": 0
       },
       "narracao": "Caio olha pro saldo. Olha pra mensagem. Olha pro relógio.",
-      "fala": 4.44
+      "fala": 3.55
     },
     {
       "id": "twist",
-      "inicio": 36,
-      "fim": 47,
+      "inicio": 26,
+      "fim": 35,
       "titulo": "O TWIST",
       "hud": {
         "dias": 7,
@@ -66,12 +66,12 @@
         "suspeita": 0
       },
       "narracao": "Aí chega outra notificação. Mesmo número. Eu sei que você viu. Não inventa de pagar conta com o meu dinheiro.",
-      "fala": 7.08
+      "fala": 5.69
     },
     {
       "id": "voto",
-      "inicio": 47,
-      "fim": 61,
+      "inicio": 35,
+      "fim": 47,
       "titulo": "VOCÊ DECIDE",
       "hud": {
         "dias": 7,
@@ -79,7 +79,7 @@
         "suspeita": 0
       },
       "narracao": "Agora a escolha é sua. A: paga a conta de luz. B: não mexe no dinheiro. Comenta A ou B. A maioria decide o Dia 6.",
-      "fala": 10.45
+      "fala": 8.36
     }
   ]
 }

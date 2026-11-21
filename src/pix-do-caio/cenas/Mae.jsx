@@ -14,9 +14,9 @@ export const Mae = () => {
   const toca = frame < 40;
   const balanca = toca ? Math.sin(frame * 1.6) * 5 : 0;
   const bolha = spring({ frame: frame - 36, fps, config: { damping: 12 } });
-  const falando = frame > 40 && frame < 40 + FALA.length * 1.1;
-  const conta = spring({ frame: frame - 110, fps, config: { damping: 9, stiffness: 150 } });
-  const carimbo = spring({ frame: frame - 150, fps, config: { damping: 7, stiffness: 220 } });
+  const falando = frame > 40 && frame < 40 + FALA.length / 1.2;
+  const conta = spring({ frame: frame - 70, fps, config: { damping: 9, stiffness: 150 } });
+  const carimbo = spring({ frame: frame - 95, fps, config: { damping: 7, stiffness: 220 } });
 
   return (
     <AbsoluteFill>
@@ -101,7 +101,7 @@ export const Mae = () => {
         }}
       >
         <div style={{ position: "absolute", top: -34, left: 150, width: 0, height: 0, borderLeft: "30px solid transparent", borderRight: "30px solid transparent", borderBottom: "40px solid #fff" }} />
-        {digitar(FALA, frame, 40, 0.9)}
+        {digitar(FALA, frame, 40, 1.2)}
       </div>
       <svg width="100%" height="100%" viewBox="0 0 1080 1920" style={{ position: "absolute", inset: 0 }}>
         <g transform="translate(540 1680) scale(0.8)">

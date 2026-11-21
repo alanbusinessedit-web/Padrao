@@ -23,8 +23,8 @@ const Relogio = ({ frame }) => {
 export const Olhar = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const fase = frame < 80 ? 0 : frame < 160 ? 1 : 2;
-  const t = frame - fase * 80;
+  const fase = frame < 38 ? 0 : frame < 76 ? 1 : 2;
+  const t = frame - fase * 38;
   const caio = spring({ frame, fps, config: { damping: 13 } });
   const troca = spring({ frame: t, fps, config: { damping: 10, stiffness: 170 } });
   const pupilas = fase === 2 ? [-0.7, -0.7] : fase === 1 ? [0.9, 0.7] : [0.9, 0.9];

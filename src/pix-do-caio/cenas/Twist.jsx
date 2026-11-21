@@ -10,10 +10,11 @@ export const Twist = () => {
   const { fps } = useVideoConfig();
   const banner = spring({ frame: frame - 70, fps, config: { damping: 8, stiffness: 180 } });
   const vibra = frame > 70 && frame < 100 ? Math.sin(frame * 3.1) * 9 : 0;
-  const sombra = interpolate(frame, [150, 190], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const sombra = interpolate(frame, [110, 150], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const caio = spring({ frame, fps, config: { damping: 13 } });
   const vinheta = frame > 70 ? 0.18 + 0.12 * Math.sin(frame / 5) : 0;
-  const texto = digitar("Eu sei que você viu. Não inventa de pagar conta com o meu dinheiro.", frame, 100, 0.42);
+  const FALA = "Eu sei que você viu. Não inventa de pagar conta com o meu dinheiro.";
+  const texto = digitar(FALA, frame, 80, 0.75);
 
   return (
     <AbsoluteFill>
@@ -46,7 +47,7 @@ export const Twist = () => {
         </div>
         <div style={{ marginTop: 18, fontWeight: 900, fontSize: 60, lineHeight: 1.2, color: PC.branco, minHeight: 250 }}>
           “{texto}
-          {frame < 270 ? <span style={{ opacity: frame % 16 < 8 ? 1 : 0 }}>|</span> : "”"}
+          {texto.length < FALA.length ? <span style={{ opacity: frame % 16 < 8 ? 1 : 0 }}>|</span> : "”"}
         </div>
       </div>
     </AbsoluteFill>

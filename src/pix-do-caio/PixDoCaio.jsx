@@ -2,6 +2,7 @@ import { prepararCenas } from "../config";
 import { VideoCenas } from "../components/VideoCenas";
 import roteiro from "./roteiro.json";
 import { Contador } from "./Elementos";
+import { Efeitos } from "./Efeitos";
 import { Gancho } from "./cenas/Gancho";
 import { Mae } from "./cenas/Mae";
 import { Mensagem } from "./cenas/Mensagem";
@@ -28,8 +29,9 @@ const COMPONENTES = Object.fromEntries(
   }),
 );
 
-// "O PIX do Caio" — Episódio 1. ~61s, 1080x1920, 30fps.
+// "O PIX do Caio" — Episódio 1. 47s, 1080x1920, 30fps.
 export const PixDoCaio = ({ narracao = "nenhuma", legendas = true, volume = 1 }) => (
+  <>
   <VideoCenas
     cenas={CENAS_PC}
     componentes={COMPONENTES}
@@ -40,4 +42,6 @@ export const PixDoCaio = ({ narracao = "nenhuma", legendas = true, volume = 1 })
     palavrasPorBloco={5}
     volume={volume}
   />
+  <Efeitos cenas={CENAS_PC} />
+  </>
 );
