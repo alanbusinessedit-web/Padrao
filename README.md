@@ -104,6 +104,38 @@ npm run render:si:audio                 # com public/audio-suspeicao-impedimento
 npm run narracao:si && npm run render:si:narracao   # ElevenLabs por cena
 ```
 
+## "O PIX do Caio" — Episódio 1 (`PixDoCaio`)
+
+Série interativa de "você decide": Caio, 23 anos, estagiário, recebe um PIX de
+R$ 12.847,32 de um número desconhecido com a mensagem "NÃO GASTA. EM 7 DIAS EU BUSCO."
+Vertical, 1:01 (61 s), 1080×1920, 30 fps, cartoon 2D. Roteiro em
+`src/pix-do-caio/roteiro.json` (tempos, narração e o `hud` de cada cena).
+
+Regras da série implementadas no código:
+
+- o contador `DIAS | SALDO | SUSPEITA` aparece em **todas** as cenas (`Contador` em `Elementos.jsx`;
+  os valores vêm do `hud` da cena, então o Ep. 2 só muda esses números);
+- termina com as duas opções grandes + "COMENTA A OU B. A MAIORIA DECIDE O DIA 6";
+- twist nos últimos 15 s antes do voto (nova notificação do mesmo número + sombra na janela).
+
+| Cena | Tempo | Conteúdo |
+| --- | --- | --- |
+| Gancho | 0–6 s | Caio de boca aberta, "PIX RECEBIDO R$ 12.847,32" contando, notas caindo |
+| Mensagem | 6–15 s | Celular: extrato do PIX + "NÃO GASTA. EM 7 DIAS EU BUSCO." digitando |
+| Mãe | 15–28 s | A mãe liga (voz alta), conta de luz R$ 187,00 "VENCE HOJE" |
+| Dilema | 28–36 s | Caio olha o saldo, a mensagem e o relógio |
+| Twist | 36–47 s | "Eu sei que você viu…", contador treme em vermelho, sombra de capuz na persiana |
+| Voto | 47–61 s | A) PAGA A CONTA DE LUZ  ×  B) NÃO MEXE NO DINHEIRO |
+
+```bash
+npm run render:pix                      # gera pix-do-caio-ep1.mp4 (sem áudio, com legendas)
+ELEVENLABS_API_KEY=... ELEVENLABS_VOICE_ID=... npm run narracao:pix
+npm run render:pix:narracao             # com a narração por cena
+npm run render:pix:audio                # com public/audio-pix-do-caio.mp3
+```
+
+Personagens (Caio, a Mãe e a sombra do Remetente) são SVG em `src/pix-do-caio/Personagens.jsx`.
+
 ## Marca "Narrando o Direito"
 
 Logo em `src/marca/Logo.jsx` (símbolo: balão de fala + balança da justiça + ondas

@@ -1,0 +1,55 @@
+{
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "cenas": [
+    {
+      "id": "gancho",
+      "inicio": 0,
+      "fim": 6,
+      "titulo": "UM PIX CHEGOU",
+      "hud": { "dias": 7, "saldo": 12847.32, "suspeita": 0 },
+      "narracao": "Caio acabou de receber doze mil reais de um número que ele não conhece."
+    },
+    {
+      "id": "mensagem",
+      "inicio": 6,
+      "fim": 15,
+      "titulo": "A MENSAGEM",
+      "hud": { "dias": 7, "saldo": 12847.32, "suspeita": 0 },
+      "narracao": "Doze mil, oitocentos e quarenta e sete reais. E uma mensagem: não gasta. Em sete dias eu busco."
+    },
+    {
+      "id": "mae",
+      "inicio": 15,
+      "fim": 28,
+      "titulo": "A MÃE LIGA",
+      "hud": { "dias": 7, "saldo": 12847.32, "suspeita": 0 },
+      "narracao": "A mãe liga. A conta de luz vence hoje. Faltam cento e oitenta e sete reais."
+    },
+    {
+      "id": "olhar",
+      "inicio": 28,
+      "fim": 36,
+      "titulo": "O DILEMA",
+      "hud": { "dias": 7, "saldo": 12847.32, "suspeita": 0 },
+      "narracao": "Caio olha pro saldo. Olha pra mensagem. Olha pro relógio."
+    },
+    {
+      "id": "twist",
+      "inicio": 36,
+      "fim": 47,
+      "titulo": "O TWIST",
+      "hud": { "dias": 7, "saldo": 12847.32, "suspeita": 0 },
+      "narracao": "Aí chega outra notificação. Mesmo número. Eu sei que você viu. Não inventa de pagar conta com o meu dinheiro."
+    },
+    {
+      "id": "voto",
+      "inicio": 47,
+      "fim": 61,
+      "titulo": "VOCÊ DECIDE",
+      "hud": { "dias": 7, "saldo": 12847.32, "suspeita": 0 },
+      "narracao": "Agora a escolha é sua. A: paga a conta de luz. B: não mexe no dinheiro. Comenta A ou B. A maioria decide o Dia 6."
+    }
+  ]
+}

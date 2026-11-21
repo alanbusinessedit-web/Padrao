@@ -5,6 +5,7 @@ import { MinhaCena } from "./MinhaCena";
 import { LogoHorizontal, LogoQuadrado } from "./marca/Logo";
 import { CENAS_SI, SuspeicaoImpedimento } from "./suspeicao-impedimento/SuspeicaoImpedimento";
 import { CENAS_FC, FascismoComunismo } from "./fascismo-comunismo/FascismoComunismo";
+import { CENAS_PC, PixDoCaio } from "./pix-do-caio/PixDoCaio";
 
 export const RemotionRoot = () => {
   return (
@@ -35,6 +36,15 @@ export const RemotionRoot = () => {
         id="SuspeicaoImpedimento"
         component={SuspeicaoImpedimento}
         durationInFrames={duracaoTotal(CENAS_SI)} // 3870 frames = 2min09s
+        fps={FPS}
+        width={LARGURA}
+        height={ALTURA}
+        defaultProps={{ narracao: "nenhuma", legendas: true, volume: 1 }}
+      />
+      <Composition
+        id="PixDoCaio"
+        component={PixDoCaio}
+        durationInFrames={duracaoTotal(CENAS_PC)} // 1830 frames = 61s
         fps={FPS}
         width={LARGURA}
         height={ALTURA}

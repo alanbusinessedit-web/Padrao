@@ -18,7 +18,11 @@
     "render:si": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4",
     "render:si:narracao": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4 --props=props/narracao-cenas.json",
     "render:si:audio": "remotion render SuspeicaoImpedimento suspeicao-impedimento.mp4 --props=props/audio-unico.json",
-    "narracao:si": "node scripts/gerar-narracao.mjs src/suspeicao-impedimento/roteiro.json narracao-suspeicao-impedimento"
+    "narracao:si": "node scripts/gerar-narracao.mjs src/suspeicao-impedimento/roteiro.json narracao-suspeicao-impedimento",
+    "render:pix": "remotion render PixDoCaio pix-do-caio-ep1.mp4",
+    "render:pix:narracao": "remotion render PixDoCaio pix-do-caio-ep1.mp4 --props=props/narracao-cenas.json",
+    "render:pix:audio": "remotion render PixDoCaio pix-do-caio-ep1.mp4 --props=props/audio-unico.json",
+    "narracao:pix": "node scripts/gerar-narracao.mjs src/pix-do-caio/roteiro.json narracao-pix-do-caio"
   },
   "dependencies": {
     "@remotion/cli": "4.0.537",
