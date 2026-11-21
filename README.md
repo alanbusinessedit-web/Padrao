@@ -124,10 +124,10 @@ Regras da série implementadas no código:
 | Ontem × hoje | 5–11,5 s | Saldo de ontem R$ 43,18 → hoje R$ 460.847,32; "o cara mais rico do prédio" |
 | Mensagem | 11,5–18,7 s | Celular: extrato do PIX + "NÃO GASTA. EM 7 DIAS EU BUSCO." digitando |
 | Tentativa | 18,7–25,7 s | Caio liga pro número (caixa postal) e tenta devolver o PIX: o app trava por 7 dias |
-| Mãe | 25,7–34 s | A mãe liga (e fala, em voz alta), conta de luz R$ 187,00 "VENCE HOJE" |
-| Dilema | 34–39 s | Caio olha o saldo, a mensagem e o relógio |
-| Twist | 39–48 s | O Remetente (voz grave) lê "Eu sei que você viu…", contador treme em vermelho, sombra de capuz na persiana |
-| Voto | 48–60 s | A) PAGA A CONTA DE LUZ  ×  B) NÃO MEXE NO DINHEIRO |
+| Mãe | 25,7–35,9 s | A mãe liga (voz alta): luz R$ 187 "VENCE HOJE" + aluguel R$ 1.200 "ATRASADO" = R$ 1.387 |
+| Dilema | 35,9–40,9 s | Caio olha o saldo, a mensagem e o relógio |
+| Twist | 40,9–49,9 s | O Remetente (voz grave) lê "Eu sei que você viu…", contador treme em vermelho, sombra de capuz na persiana |
+| Voto | 49,9–60,9 s | A) PAGA O ALUGUEL E A LUZ  ×  B) NÃO MEXE NO DINHEIRO |
 
 ```bash
 npm run render:pix:narracao             # vídeo final de 60 s: voz + efeitos (pix-do-caio-ep1.mp4)

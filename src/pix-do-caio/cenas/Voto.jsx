@@ -41,14 +41,14 @@ const Opcao = ({ letra, titulo, risco, cor, escuro, top, inicio, destaque }) => 
 export const Voto = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const cta = spring({ frame: frame - 150, fps, config: { damping: 9, stiffness: 160 } });
-  const dia = spring({ frame: frame - 190, fps, config: { damping: 9, stiffness: 160 } });
+  const cta = spring({ frame: frame - 160, fps, config: { damping: 9, stiffness: 160 } });
+  const dia = spring({ frame: frame - 205, fps, config: { damping: 9, stiffness: 160 } });
   return (
     <AbsoluteFill>
       <Fundo de={PC.hud} para="#2a1f5a" seed="voto" corParticula={PC.pix} />
       <CaixaTexto texto="VOCÊ DECIDE" top={230} tamanho={84} fundo="rgba(255,255,255,0.12)" />
-      <Opcao letra="A" titulo="PAGA A CONTA DE LUZ" risco="o remetente pode perceber" cor={PC.azulEscuro} escuro="#124666" top={450} inicio={40} destaque={0} />
-      <Opcao letra="B" titulo="NÃO MEXE NO DINHEIRO" risco="a mãe descobre e a conta atrasa" cor={PC.laranjaEscuro} escuro="#7a420a" top={850} inicio={100} destaque={1} />
+      <Opcao letra="A" titulo="PAGA O ALUGUEL E A LUZ" risco="o remetente pode perceber" cor={PC.azulEscuro} escuro="#124666" top={450} inicio={48} destaque={0} />
+      <Opcao letra="B" titulo="NÃO MEXE NO DINHEIRO" risco="aluguel atrasa e a luz é cortada" cor={PC.laranjaEscuro} escuro="#7a420a" top={850} inicio={106} destaque={1} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 1280, display: "flex", justifyContent: "center", transform: `scale(${cta})`, opacity: cta }}>
         <div style={{ fontFamily, fontWeight: 900, fontSize: 76, color: "#073b27", background: PC.pix, borderRadius: 999, padding: "18px 64px", boxShadow: "0 12px 0 #0f9d66" }}>COMENTA A OU B</div>
       </div>

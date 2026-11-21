@@ -58,7 +58,7 @@
     {
       "id": "mae",
       "inicio": 25.7,
-      "fim": 34,
+      "fim": 35.9,
       "titulo": "A MÃE LIGA",
       "hud": {
         "dias": 7,
@@ -70,8 +70,8 @@
     },
     {
       "id": "olhar",
-      "inicio": 34,
-      "fim": 39,
+      "inicio": 35.9,
+      "fim": 40.9,
       "titulo": "O DILEMA",
       "hud": {
         "dias": 7,
@@ -83,8 +83,8 @@
     },
     {
       "id": "twist",
-      "inicio": 39,
-      "fim": 48,
+      "inicio": 40.9,
+      "fim": 49.9,
       "titulo": "O TWIST",
       "hud": {
         "dias": 7,
@@ -96,16 +96,16 @@
     },
     {
       "id": "voto",
-      "inicio": 48,
-      "fim": 60,
+      "inicio": 49.9,
+      "fim": 60.9,
       "titulo": "VOCÊ DECIDE",
       "hud": {
         "dias": 7,
         "saldo": 460847.32,
         "suspeita": 0
       },
-      "narracao": "Agora a escolha é sua. A: paga a conta de luz. B: não mexe no dinheiro. Comenta A ou B. A maioria decide o Dia 6.",
-      "fala": 8.36
+      "narracao": "Agora a escolha é sua. A: paga o aluguel e a luz. B: não mexe no dinheiro. Comenta A ou B. A maioria decide o Dia 6.",
+      "fala": 8.54
     }
   ]
 }

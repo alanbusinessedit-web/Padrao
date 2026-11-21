@@ -32,7 +32,12 @@ export const VideoCenas = ({
           >
             <Transicao ativa={i > 0}>
               <Cena />
-              {legendas && cena.narracao && <Legenda texto={cena.narracao} fim={cena.fala ? Math.round(cena.fala * FPS) + 6 : cena.duracao - 15} palavrasPorBloco={palavrasPorBloco} />}
+              {legendas && cena.narracao && (
+                // com `fala` (duração real do áudio no roteiro), a legenda some quando a fala acaba
+                <Sequence from={0} durationInFrames={cena.fala ? Math.round(cena.fala * FPS) + 24 : cena.duracao + TRANSICAO} layout="none">
+                  <Legenda texto={cena.narracao} fim={cena.fala ? Math.round(cena.fala * FPS) + 6 : cena.duracao - 15} palavrasPorBloco={palavrasPorBloco} />
+                </Sequence>
+              )}
             </Transicao>
           </Sequence>
         );

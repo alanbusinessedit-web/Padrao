@@ -27,7 +27,10 @@ const EFEITOS = [
   { cena: "mae", quando: 0, arquivo: "toque", volume: 0.55 },
   { cena: "mae", quando: 1.2, arquivo: "pop", volume: 0.6 },
   { cena: "mae", quando: 2.1, arquivo: "whoosh", volume: 0.5 },
-  { cena: "mae", quando: 3.0, arquivo: "carimbo", volume: 0.8 },
+  { cena: "mae", quando: 2.93, arquivo: "carimbo", volume: 0.8 },
+  { cena: "mae", quando: 5.67, arquivo: "pop", volume: 0.6, taxa: 0.8 },
+  { cena: "mae", quando: 6.67, arquivo: "carimbo", volume: 0.8, taxa: 0.9 },
+  { cena: "mae", quando: 8.27, arquivo: "erro", volume: 0.5 },
   // dilema: um pensamento de cada vez + relógio
   { cena: "olhar", quando: 0.05, arquivo: "pensamento", volume: 0.6 },
   { cena: "olhar", quando: 1.27, arquivo: "pensamento", volume: 0.6, taxa: 1.25 },
@@ -40,10 +43,10 @@ const EFEITOS = [
   { cena: "twist", quando: 2.9, arquivo: "digitacao", volume: 0.2, duracao: 3.0 },
   { cena: "twist", quando: 4.1, arquivo: "sombra", volume: 0.7 },
   // voto: cartões entram, chamada para ação
-  { cena: "voto", quando: 1.33, arquivo: "whoosh", volume: 0.45, taxa: 1.3 },
-  { cena: "voto", quando: 3.33, arquivo: "whoosh", volume: 0.45, taxa: 1.3 },
-  { cena: "voto", quando: 5.0, arquivo: "cta", volume: 0.7 },
-  { cena: "voto", quando: 6.33, arquivo: "pop", volume: 0.6, taxa: 0.8 },
+  { cena: "voto", quando: 1.6, arquivo: "whoosh", volume: 0.45, taxa: 1.3 },
+  { cena: "voto", quando: 3.55, arquivo: "whoosh", volume: 0.45, taxa: 1.3 },
+  { cena: "voto", quando: 5.4, arquivo: "cta", volume: 0.7 },
+  { cena: "voto", quando: 6.82, arquivo: "pop", volume: 0.6, taxa: 0.8 },
 ];
 
 export const Efeitos = ({ cenas }) => {
