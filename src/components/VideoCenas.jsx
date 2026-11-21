@@ -1,5 +1,5 @@
 import { AbsoluteFill, Sequence } from "remotion";
-import { TRANSICAO } from "../config";
+import { FPS, TRANSICAO } from "../config";
 import { Legenda } from "./Legenda";
 import { Narracao } from "./Narracao";
 import { Transicao } from "./Transicao";
@@ -32,7 +32,7 @@ export const VideoCenas = ({
           >
             <Transicao ativa={i > 0}>
               <Cena />
-              {legendas && cena.narracao && <Legenda texto={cena.narracao} fim={cena.duracao - 15} palavrasPorBloco={palavrasPorBloco} />}
+              {legendas && cena.narracao && <Legenda texto={cena.narracao} fim={cena.fala ? Math.round(cena.fala * FPS) + 6 : cena.duracao - 15} palavrasPorBloco={palavrasPorBloco} />}
             </Transicao>
           </Sequence>
         );
