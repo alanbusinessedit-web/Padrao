@@ -108,7 +108,7 @@ npm run narracao:si && npm run render:si:narracao   # ElevenLabs por cena
 
 Série interativa de "você decide": Caio, 23 anos, estagiário, recebe um PIX de
 R$ 12.847,32 de um número desconhecido com a mensagem "NÃO GASTA. EM 7 DIAS EU BUSCO."
-Vertical, 45 s, 1080×1920, 30 fps, cartoon 2D. Roteiro em
+Vertical, 60 s, 1080×1920, 30 fps, cartoon 2D. Roteiro em
 `src/pix-do-caio/roteiro.json` (tempos, narração e o `hud` de cada cena).
 
 Regras da série implementadas no código:
@@ -121,14 +121,16 @@ Regras da série implementadas no código:
 | Cena | Tempo | Conteúdo |
 | --- | --- | --- |
 | Gancho | 0–5 s | Caio de boca aberta, "PIX RECEBIDO R$ 12.847,32" contando, notas caindo |
-| Mensagem | 5–12 s | Celular: extrato do PIX + "NÃO GASTA. EM 7 DIAS EU BUSCO." digitando |
-| Mãe | 12–20 s | A mãe liga (e fala, em voz alta), conta de luz R$ 187,00 "VENCE HOJE" |
-| Dilema | 20–25 s | Caio olha o saldo, a mensagem e o relógio |
-| Twist | 25–34 s | O Remetente (voz grave) lê "Eu sei que você viu…", contador treme em vermelho, sombra de capuz na persiana |
-| Voto | 34–45 s | A) PAGA A CONTA DE LUZ  ×  B) NÃO MEXE NO DINHEIRO |
+| Ontem × hoje | 5–11,5 s | Saldo de ontem R$ 43,18 → hoje R$ 12.847,32; "o cara mais rico do prédio" |
+| Mensagem | 11,5–18,7 s | Celular: extrato do PIX + "NÃO GASTA. EM 7 DIAS EU BUSCO." digitando |
+| Tentativa | 18,7–25,7 s | Caio liga pro número (caixa postal) e tenta devolver o PIX: o app trava por 7 dias |
+| Mãe | 25,7–34 s | A mãe liga (e fala, em voz alta), conta de luz R$ 187,00 "VENCE HOJE" |
+| Dilema | 34–39 s | Caio olha o saldo, a mensagem e o relógio |
+| Twist | 39–48 s | O Remetente (voz grave) lê "Eu sei que você viu…", contador treme em vermelho, sombra de capuz na persiana |
+| Voto | 48–60 s | A) PAGA A CONTA DE LUZ  ×  B) NÃO MEXE NO DINHEIRO |
 
 ```bash
-npm run render:pix:narracao             # vídeo final: voz + efeitos (pix-do-caio-ep1.mp4)
+npm run render:pix:narracao             # vídeo final de 60 s: voz + efeitos (pix-do-caio-ep1.mp4)
 npm run render:pix                      # sem narração (efeitos e legendas continuam)
 ```
 

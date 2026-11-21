@@ -88,6 +88,12 @@ export const Caio = ({ boca = "tensa", pupilas = [0, 0], sobrancelha = "estresse
           </g>
         )}
         {boca === "reta" && <rect x="-12" y="-322" width="24" height="7" rx="3.5" fill="#7a2e3a" />}
+        {boca === "sorriso" && (
+          <g>
+            <path d="M -26 -326 Q 0 -296 26 -326 Q 0 -318 -26 -326 Z" fill="#7a2e3a" stroke="#7a2e3a" strokeWidth="5" strokeLinejoin="round" />
+            <path d="M -16 -322 Q 0 -312 16 -322 L 12 -318 Q 0 -312 -12 -318 Z" fill="#ffffff" />
+          </g>
+        )}
         {boca === "tensa" && <path d="M -20 -318 Q -10 -326 0 -318 Q 10 -310 20 -318" fill="none" stroke="#7a2e3a" strokeWidth="7" strokeLinecap="round" />}
         {suor && (
           <g>

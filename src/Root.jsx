@@ -44,7 +44,7 @@ export const RemotionRoot = () => {
       <Composition
         id="PixDoCaio"
         component={PixDoCaio}
-        durationInFrames={duracaoTotal(CENAS_PC)} // 1410 frames = 47s
+        durationInFrames={duracaoTotal(CENAS_PC)} // 1800 frames = 60s
         fps={FPS}
         width={LARGURA}
         height={ALTURA}

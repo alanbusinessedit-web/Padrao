@@ -39,3 +39,20 @@ sfx cta "0.4*sin(2*PI*880*t)*exp(-8*t)+0.4*gte(t,0.09)*sin(2*PI*1319*(t-0.09))*e
 # deslizes (conta de luz, cartões A/B) e transição entre cenas
 ffmpeg -v error -y -f lavfi -i "anoisesrc=d=0.7:c=pink:r=44100:a=0.8" -af "highpass=f=250,lowpass=f=3500,afade=t=in:d=0.3,afade=t=out:st=0.3:d=0.4,volume=2.8" -b:a 128k public/sfx/whoosh.mp3
 ffmpeg -v error -y -f lavfi -i "anoisesrc=d=0.45:c=white:r=44100:a=0.6" -af "highpass=f=700,lowpass=f=6500,afade=t=in:d=0.2,afade=t=out:st=0.2:d=0.25" -b:a 128k public/sfx/transicao.mp3
+
+# --- cenas "ontem x hoje" e "tentativa" ---
+# discagem (tons DTMF de um número), toque de chamada, bip da caixa postal
+dtmf=""; fs=(697 770 852 941 770 852 697 941); gs=(1209 1336 1477 1336 1209 1477 1336 1209)
+for k in 0 1 2 3 4 5 6 7; do dtmf+="+0.25*gte(t,$(echo "0.12*$k" | bc -l))*lt(t,$(echo "0.12*$k+0.09" | bc -l))*(sin(2*PI*${fs[$k]}*t)+sin(2*PI*${gs[$k]}*t))"; done
+sfx discagem "${dtmf#+}" 1.05
+sfx chamando "0.4*(sin(2*PI*425*t))*(lt(mod(t,1.6),0.9))" 1.3
+sfx beep "0.5*sin(2*PI*1000*t)*lt(t,0.28)" 0.35
+# toque no botão e erro do app
+sfx clique "0.8*sin(2*PI*1300*t)*exp(-90*t)+0.4*$rnd*exp(-200*t)" 0.15
+sfx erro "0.5*(sin(2*PI*180*t)+0.5*sin(2*PI*360*t)+0.3*sin(2*PI*540*t))*(lt(t,0.18)+gte(t,0.28)*lt(t,0.46))" 0.55
+# cadeado fechando (Pix travado por 7 dias)
+sfx cadeado "0.8*sin(2*PI*140*t)*exp(-25*t)+0.5*$rnd*exp(-120*t)+0.5*gte(t,0.13)*sin(2*PI*2200*(t-0.13))*exp(-70*(t-0.13))" 0.5
+# "ontem" (trombone triste), contagem do saldo subindo, fanfarra da coroa
+sfx triste "0.35*(sin(2*PI*233*t)+0.5*sin(2*PI*466*t))*lt(t,0.4)*(1-0.3*sin(2*PI*5*t))+0.35*gte(t,0.42)*(sin(2*PI*220*(t-0.42))+0.5*sin(2*PI*440*(t-0.42)))*lt(t,0.82)+0.35*gte(t,0.84)*(sin(2*PI*(207-35*(t-0.84))*(t-0.84))+0.5*sin(2*PI*2*(207-35*(t-0.84))*(t-0.84)))*exp(-1.2*(t-0.84))" 1.8
+sfx contagem "0.45*$rnd*exp(-300*mod(t,0.07-0.04*t/1.3))+0.2*sin(2*PI*(600+500*t)*t)*exp(-60*mod(t,0.07-0.04*t/1.3))" 1.4
+sfx fanfarra "0.22*(sin(2*PI*523*t)+sin(2*PI*659*t)+sin(2*PI*784*t))*exp(-3*t)*min(1,t*80)+0.28*gte(t,0.18)*(sin(2*PI*659*(t-0.18))+sin(2*PI*784*(t-0.18))+sin(2*PI*1047*(t-0.18))+0.5*sin(2*PI*2093*(t-0.18)))*exp(-2.5*(t-0.18))" 1.3
