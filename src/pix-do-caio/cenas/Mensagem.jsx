@@ -2,6 +2,7 @@ import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } fr
 import { fontFamily } from "../../fonte";
 import { Apartamento, Celular, brl, digitar } from "../Elementos";
 import { Caio } from "../Personagens";
+import { VALOR_PIX } from "../valor";
 import { PC } from "../cores";
 
 // 6-15s: notificação do PIX + a mensagem "NÃO GASTA. EM 7 DIAS EU BUSCO."
@@ -10,9 +11,9 @@ export const Mensagem = () => {
   const { fps } = useVideoConfig();
   const entrada = spring({ frame, fps, config: { damping: 13 } });
   const card = spring({ frame: frame - 14, fps, config: { damping: 12 } });
-  const bolha = spring({ frame: frame - 84, fps, config: { damping: 12 } });
-  const texto = digitar("NÃO GASTA. EM 7 DIAS EU BUSCO.", frame, 112, 0.5);
-  const pontos = frame > 84 && frame < 112;
+  const bolha = spring({ frame: frame - 100, fps, config: { damping: 12 } });
+  const texto = digitar("NÃO GASTA. EM 7 DIAS EU BUSCO.", frame, 131, 0.5);
+  const pontos = frame > 100 && frame < 131;
 
   return (
     <AbsoluteFill>
@@ -43,7 +44,7 @@ export const Mensagem = () => {
                 <div style={{ fontWeight: 600, fontSize: 26, color: "#7a839d" }}>agora mesmo</div>
               </div>
             </div>
-            <div style={{ marginTop: 22, fontWeight: 900, fontSize: 66, color: PC.pixEscuro, letterSpacing: -1 }}>{brl(12847.32)}</div>
+            <div style={{ marginTop: 22, fontWeight: 900, fontSize: 58, color: PC.pixEscuro, letterSpacing: -1 }}>{brl(VALOR_PIX)}</div>
             <div style={{ marginTop: 6, fontWeight: 700, fontSize: 28, color: "#7a839d" }}>De: número desconhecido</div>
           </div>
           <div style={{ marginTop: 36, fontWeight: 800, fontSize: 28, color: "#6b7390", letterSpacing: 2, opacity: bolha }}>MENSAGEM</div>

@@ -2,15 +2,16 @@ import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } fr
 import { fontFamily } from "../../fonte";
 import { Apartamento, Notas, brl } from "../Elementos";
 import { Caio } from "../Personagens";
+import { VALOR_PIX } from "../valor";
 import { PC } from "../cores";
 
-// Hook (0-6s): Caio de boca aberta olhando o celular. Número gigante: R$ 12.847,32.
+// Hook (0-6s): Caio de boca aberta olhando o celular. Número gigante: R$ 460.847,32.
 export const Gancho = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const pop = spring({ frame: frame - 6, fps, config: { damping: 9, stiffness: 140 } });
   const caio = spring({ frame, fps, config: { damping: 12 } });
-  const valor = interpolate(frame, [10, 55], [0, 12847.32], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const valor = interpolate(frame, [10, 55], [0, VALOR_PIX], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const zoom = 1 + frame * 0.0006;
 
   return (

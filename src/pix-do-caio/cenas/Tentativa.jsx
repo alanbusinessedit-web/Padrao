@@ -2,6 +2,7 @@ import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } fr
 import { fontFamily } from "../../fonte";
 import { Apartamento, Celular, brl } from "../Elementos";
 import { Caio } from "../Personagens";
+import { VALOR_PIX } from "../valor";
 import { PC } from "../cores";
 
 // 18,7-25,7s: Caio liga pro número (caixa postal) e tenta devolver o PIX (o app recusa).
@@ -32,7 +33,7 @@ const App = ({ frame }) => {
     <div style={{ position: "absolute", inset: 0, background: "#eef1f7", fontFamily, padding: "86px 28px 0" }}>
       <div style={{ fontWeight: 800, fontSize: 28, color: "#6b7390", letterSpacing: 2 }}>BANCO • PIX RECEBIDO</div>
       <div style={{ marginTop: 20, background: "#fff", borderRadius: 34, padding: "28px 30px", boxShadow: "0 16px 34px rgba(20,30,70,0.15)" }}>
-        <div style={{ fontWeight: 900, fontSize: 66, color: PC.pixEscuro, letterSpacing: -1 }}>{brl(12847.32)}</div>
+        <div style={{ fontWeight: 900, fontSize: 58, color: PC.pixEscuro, letterSpacing: -1 }}>{brl(VALOR_PIX)}</div>
         <div style={{ marginTop: 6, fontWeight: 700, fontSize: 28, color: "#7a839d" }}>De: número desconhecido</div>
       </div>
       <div style={{ marginTop: 40, background: PC.pix, borderRadius: 30, padding: "32px 0", textAlign: "center", fontWeight: 900, fontSize: 48, color: "#073b27", transform: `scale(${1 - 0.06 * toque})`, boxShadow: toque > 0.3 ? "0 4px 0 #0f9d66" : "0 12px 0 #0f9d66" }}>DEVOLVER PIX</div>

@@ -10,22 +10,22 @@
       "titulo": "UM PIX CHEGOU",
       "hud": {
         "dias": 7,
-        "saldo": 12847.32,
+        "saldo": 460847.32,
         "suspeita": 0
       },
-      "narracao": "Caio acabou de receber doze mil reais de um número que ele não conhece.",
-      "fala": 3.89
+      "narracao": "Caio acabou de receber quatrocentos e sessenta mil reais de um número que ele não conhece.",
+      "fala": 4.65
     },
     {
       "id": "contexto",
       "titulo": "ONTEM X HOJE",
       "hud": {
         "dias": 7,
-        "saldo": 12847.32,
+        "saldo": 460847.32,
         "suspeita": 0
       },
       "narracao": "Ontem, o saldo do Caio era quarenta e três reais e dezoito centavos. Hoje, ele é o cara mais rico do prédio.",
-      "fala": 5.9,
+      "fala": 5.93,
       "inicio": 5,
       "fim": 11.5
     },
@@ -36,22 +36,22 @@
       "titulo": "A MENSAGEM",
       "hud": {
         "dias": 7,
-        "saldo": 12847.32,
+        "saldo": 460847.32,
         "suspeita": 0
       },
-      "narracao": "Doze mil, oitocentos e quarenta e sete reais. E uma mensagem: não gasta. Em sete dias eu busco.",
-      "fala": 5.8
+      "narracao": "Quatrocentos e sessenta mil, oitocentos e quarenta e sete reais. E uma mensagem: não gasta. Em sete dias eu busco.",
+      "fala": 6.43
     },
     {
       "id": "tentativa",
       "titulo": "SEM VOLTA",
       "hud": {
         "dias": 7,
-        "saldo": 12847.32,
+        "saldo": 460847.32,
         "suspeita": 0
       },
       "narracao": "Caio liga pro número. Caixa postal. Tenta devolver o PIX. O app não deixa. O dinheiro é dele. Por sete dias.",
-      "fala": 6.6,
+      "fala": 6.64,
       "inicio": 18.7,
       "fim": 25.7
     },
@@ -62,7 +62,7 @@
       "titulo": "A MÃE LIGA",
       "hud": {
         "dias": 7,
-        "saldo": 12847.32,
+        "saldo": 460847.32,
         "suspeita": 0
       },
       "narracao": "A mãe liga.",
@@ -75,7 +75,7 @@
       "titulo": "O DILEMA",
       "hud": {
         "dias": 7,
-        "saldo": 12847.32,
+        "saldo": 460847.32,
         "suspeita": 0
       },
       "narracao": "Caio olha pro saldo. Olha pra mensagem. Olha pro relógio.",
@@ -88,7 +88,7 @@
       "titulo": "O TWIST",
       "hud": {
         "dias": 7,
-        "saldo": 12847.32,
+        "saldo": 460847.32,
         "suspeita": 0
       },
       "narracao": "Aí chega outra notificação. Mesmo número.",
@@ -101,7 +101,7 @@
       "titulo": "VOCÊ DECIDE",
       "hud": {
         "dias": 7,
-        "saldo": 12847.32,
+        "saldo": 460847.32,
         "suspeita": 0
       },
       "narracao": "Agora a escolha é sua. A: paga a conta de luz. B: não mexe no dinheiro. Comenta A ou B. A maioria decide o Dia 6.",

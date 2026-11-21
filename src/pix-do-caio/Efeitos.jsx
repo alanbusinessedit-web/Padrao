@@ -8,9 +8,9 @@ const EFEITOS = [
   { cena: "gancho", quando: 0.1, arquivo: "kaching", volume: 0.8 },
   // contexto: "ontem" (triste), saldo subindo, coroa
   { cena: "contexto", quando: 0.2, arquivo: "triste", volume: 0.6 },
-  { cena: "contexto", quando: 2.75, arquivo: "whoosh", volume: 0.4 },
-  { cena: "contexto", quando: 2.93, arquivo: "contagem", volume: 0.5, duracao: 1.3 },
-  { cena: "contexto", quando: 4.33, arquivo: "fanfarra", volume: 0.6 },
+  { cena: "contexto", quando: 3.55, arquivo: "whoosh", volume: 0.4 },
+  { cena: "contexto", quando: 3.73, arquivo: "contagem", volume: 0.5, duracao: 1.3 },
+  { cena: "contexto", quando: 4.53, arquivo: "fanfarra", volume: 0.6 },
   // tentativa: discar, chamar, caixa postal, tocar em devolver, erro, cadeado
   { cena: "tentativa", quando: 0.0, arquivo: "discagem", volume: 0.5 },
   { cena: "tentativa", quando: 1.1, arquivo: "chamando", volume: 0.4, duracao: 0.3 },
@@ -20,9 +20,9 @@ const EFEITOS = [
   { cena: "tentativa", quando: 5.5, arquivo: "cadeado", volume: 0.55 },
   // mensagem: aviso do banco, mensagem chegando, digitação
   { cena: "mensagem", quando: 0.35, arquivo: "pix", volume: 0.7 },
-  { cena: "mensagem", quando: 2.8, arquivo: "notificacao", volume: 0.7 },
-  { cena: "mensagem", quando: 2.85, arquivo: "mensagem", volume: 0.6 },
-  { cena: "mensagem", quando: 3.7, arquivo: "digitacao", volume: 0.35, duracao: 2.1 },
+  { cena: "mensagem", quando: 3.33, arquivo: "notificacao", volume: 0.7 },
+  { cena: "mensagem", quando: 3.4, arquivo: "mensagem", volume: 0.6 },
+  { cena: "mensagem", quando: 4.38, arquivo: "digitacao", volume: 0.35, duracao: 2.1 },
   // mãe: toca, balão, conta de luz entra, carimbo
   { cena: "mae", quando: 0, arquivo: "toque", volume: 0.55 },
   { cena: "mae", quando: 1.2, arquivo: "pop", volume: 0.6 },

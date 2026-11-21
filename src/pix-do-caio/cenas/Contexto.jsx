@@ -2,6 +2,7 @@ import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } fr
 import { fontFamily } from "../../fonte";
 import { Apartamento, Notas, brl } from "../Elementos";
 import { Caio } from "../Personagens";
+import { VALOR_PIX } from "../valor";
 import { PC } from "../cores";
 
 const Coroa = () => (
@@ -14,10 +15,10 @@ const Coroa = () => (
   </g>
 );
 
-// 5-11,5s: o contraste. Ontem R$ 43,18; hoje R$ 12.847,32; "o cara mais rico do prédio".
-// Tempos dos balões acompanham a narração (HOJE entra em ~2,8 s, a coroa em ~4,3 s).
-export const T_HOJE = 84;
-export const T_COROA = 130;
+// 5-11,5s: o contraste. Ontem R$ 43,18; hoje R$ 460.847,32; "o cara mais rico do prédio".
+// Tempos dos balões acompanham a narração (HOJE entra em ~3,6 s, a coroa em ~4,5 s).
+export const T_HOJE = 108;
+export const T_COROA = 136;
 
 export const Contexto = () => {
   const frame = useCurrentFrame();
@@ -25,7 +26,7 @@ export const Contexto = () => {
   const ontem = spring({ frame: frame - 6, fps, config: { damping: 11 } });
   const hoje = spring({ frame: frame - T_HOJE, fps, config: { damping: 9, stiffness: 140 } });
   const coroa = spring({ frame: frame - T_COROA, fps, config: { damping: 7, stiffness: 150 } });
-  const valor = interpolate(frame, [T_HOJE + 4, T_HOJE + 40], [43.18, 12847.32], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const valor = interpolate(frame, [T_HOJE + 4, T_HOJE + 40], [43.18, VALOR_PIX], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const caio = spring({ frame, fps, config: { damping: 13 } });
   const rico = frame >= T_COROA;
 

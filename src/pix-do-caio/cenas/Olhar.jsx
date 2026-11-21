@@ -2,6 +2,7 @@ import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } fr
 import { fontFamily } from "../../fonte";
 import { Apartamento, brl } from "../Elementos";
 import { Caio } from "../Personagens";
+import { VALOR_PIX } from "../valor";
 import { PC } from "../cores";
 
 const Relogio = ({ frame }) => {
@@ -31,7 +32,7 @@ export const Olhar = () => {
   const tremor = 0.8 + fase * 1.2;
 
   const itens = [
-    { rotulo: "O SALDO", cor: PC.pix, conteudo: <div style={{ fontFamily, fontWeight: 900, fontSize: 100, color: PC.pix, letterSpacing: -2 }}>{brl(12847.32)}</div> },
+    { rotulo: "O SALDO", cor: PC.pix, conteudo: <div style={{ fontFamily, fontWeight: 900, fontSize: 100, color: PC.pix, letterSpacing: -2 }}>{brl(VALOR_PIX)}</div> },
     {
       rotulo: "A MENSAGEM",
       cor: PC.alerta,

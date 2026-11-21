@@ -107,7 +107,7 @@ npm run narracao:si && npm run render:si:narracao   # ElevenLabs por cena
 ## "O PIX do Caio" — Episódio 1 (`PixDoCaio`)
 
 Série interativa de "você decide": Caio, 23 anos, estagiário, recebe um PIX de
-R$ 12.847,32 de um número desconhecido com a mensagem "NÃO GASTA. EM 7 DIAS EU BUSCO."
+R$ 460.847,32 de um número desconhecido com a mensagem "NÃO GASTA. EM 7 DIAS EU BUSCO."
 Vertical, 60 s, 1080×1920, 30 fps, cartoon 2D. Roteiro em
 `src/pix-do-caio/roteiro.json` (tempos, narração e o `hud` de cada cena).
 
@@ -120,8 +120,8 @@ Regras da série implementadas no código:
 
 | Cena | Tempo | Conteúdo |
 | --- | --- | --- |
-| Gancho | 0–5 s | Caio de boca aberta, "PIX RECEBIDO R$ 12.847,32" contando, notas caindo |
-| Ontem × hoje | 5–11,5 s | Saldo de ontem R$ 43,18 → hoje R$ 12.847,32; "o cara mais rico do prédio" |
+| Gancho | 0–5 s | Caio de boca aberta, "PIX RECEBIDO R$ 460.847,32" contando, notas caindo |
+| Ontem × hoje | 5–11,5 s | Saldo de ontem R$ 43,18 → hoje R$ 460.847,32; "o cara mais rico do prédio" |
 | Mensagem | 11,5–18,7 s | Celular: extrato do PIX + "NÃO GASTA. EM 7 DIAS EU BUSCO." digitando |
 | Tentativa | 18,7–25,7 s | Caio liga pro número (caixa postal) e tenta devolver o PIX: o app trava por 7 dias |
 | Mãe | 25,7–34 s | A mãe liga (e fala, em voz alta), conta de luz R$ 187,00 "VENCE HOJE" |

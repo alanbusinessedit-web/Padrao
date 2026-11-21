@@ -5,7 +5,7 @@
 #  - Remetente (Rannox Elion, grave) entra 2.9 s depois do início, na cena "twist".
 set -euo pipefail
 cd "$(dirname "$0")/../public/narracao-pix-do-caio"
-for c in gancho mensagem olhar voto; do
+for c in gancho contexto mensagem tentativa olhar voto; do
   ffmpeg -v error -y -i original/$c.mp3 -filter:a "atempo=1.25" -b:a 128k $c.mp3
 done
 mistura() { # cena narrador voz atraso_ms tempo_voz
